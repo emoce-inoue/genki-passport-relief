@@ -2,20 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const glob = require('glob');
-
-// 動的にHTMLファイルを読み込む設定
-const htmlPlugins = glob
-  .sync('./src/**/*.html') // サブディレクトリ含む
-  .concat(glob.sync('./src/*.html')) // 直下のファイルも対象に
-  .map((file) => {
-    new HtmlWebpackPlugin({
-      filename: path.relative('./src', file),
-      template: file,
-      inject: 'body',
-      minify: false,
-    });
-  });
 
 module.exports = {
   mode: 'production',
@@ -32,7 +18,7 @@ module.exports = {
     hot: true,
     open: true,
     watchFiles: {
-      paths: ['src/**/*.html'],
+      paths: ['src/index.html'],
       options: {
         usePolling: true,
       },
@@ -64,13 +50,17 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js'], // ES6モジュールを認識する
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
-    ...htmlPlugins,
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      inject: 'body',
+      minify: false,
+    }),
     new CopyWebpackPlugin({
       patterns: [{ from: 'src/images', to: 'images' }],
     }),
