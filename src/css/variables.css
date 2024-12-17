@@ -37,12 +37,12 @@
 
   /* color */
   --color-grayscale-0: #fff;
-  --color-grayscale-100: #FFFDD2;
-  --color-grayscale-200: #F7DF7F;
-  --color-grayscale-300: #D2ECFF;
-  --color-grayscale-400: #52A1DB;
-  --color-grayscale-500: #005EA4;
-  --color-grayscale-700: #CF2CA0;
+  --color-grayscale-100: #fffdd2;
+  --color-grayscale-200: #f7df7f;
+  --color-grayscale-300: #d2ecff;
+  --color-grayscale-400: #52a1db;
+  --color-grayscale-500: #005ea4;
+  --color-grayscale-700: #cf2ca0;
   --color-grayscale-800: #494949;
   --color-grayscale-900: #353535;
   --color-grayscale-1000: #000;
@@ -69,5 +69,3 @@
   --speed-slow: 1s;
   --speed-over-slow: 2s;
 }
-
-

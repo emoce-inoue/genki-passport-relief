@@ -1,74 +1,11 @@
 /* layout */
 
-body.loaded .section-hero__titleline-pop {
-  margin-top: 0;
-  margin-left: calc(14 / var(--layout-width-sp)* 100%);
-  scale: 1;
-  transition: .9s cubic-bezier(0.65, 0.05, 0.36, 1) 1.2s;
+html {
+  scroll-behavior: smooth;
 }
-
-body.loaded .section-hero__titleline-pop .elm {
-  opacity: 1;
-  translate: 0 0;
-  transition: opacity .4s ease .3s, translate .4s cubic-bezier(0,.89,.63,1.47) .3s;
-}
-
-body.loaded .section-hero__titleline-title {
-  opacity: 1;
-  scale: 1;
-  transition: opacity .9s cubic-bezier(0.65, 0.05, 0.36, 1) 1.2s, scale .9s cubic-bezier(0.65, 0.05, 0.36, 1) 1.2s;
-}
-
-body.loaded .section-hero__titleline-title .flash-elm {
-  opacity: 1;
-  transition: opacity 0s steps(1);
-}
-
-body.loaded .section-hero__titleline-title .flash-elm1 {
-  transition-delay: 2.1s;
-}
-
-body.loaded .section-hero__titleline-title .flash-elm2 {
-  transition-delay: 2.4s;
-}
-
-body.loaded .section-hero__titleline-title .flash-elm3 {
-  transition-delay: 2.7s;
-}
-
-body.loaded .section-hero__titleline-title .flash-elm img {
-  animation: flash 3s steps(1) 2.9s;
-}
-
-/* body.loaded .c-hero-disease-list {
-  opacity: 1;
-  scale: 1;
-  transition: opacity .5s ease, scale .5s cubic-bezier(0,.89,.49,1.47);
-}
-
-body.loaded .c-hero-disease-list:nth-of-type(1) {
-  transition-delay: 1.3s;
-}
-
-body.loaded .c-hero-disease-list:nth-of-type(2) {
-  transition-delay: 1.6s;
-}
-
-body.loaded .c-hero-disease-list:nth-of-type(3) {
-  transition-delay: 1.8s;
-}
-
-body.loaded .section-hero__disease .heading::after {
-  transform: scaleX(1);
-  transition: transform 1s ease-out 1.8s;
-} */
 
 .wrapper {
   overflow: hidden;
-}
-
-.header__logo img, .section-hero__titleline-pop img, .section-hero__titleline-title .flash-elm img, .section-hero__disease .heading img, .c-section-heading img, .section-kokuchi__pop img, .c-freeshiryou-pop img, .c-freeshiryou-btn__arrow img, .c-freeshiryou-btn__icon img, .c-qa-box__question-icon .elm img, .c-qa-box__answer-icon img, .c-kokuchi-answer__btn-pop img {
-  width: 100%;
 }
 
 .header {
@@ -85,14 +22,18 @@ body.loaded .section-hero__disease .heading::after {
 }
 
 .header__logo {
-  width: min(calc(153/var(--layout-width-sp)*100%), calc(153px * 1.2));
+  width: min(calc(153 / var(--layout-width-sp) * 100%), calc(153px * 1.2));
+}
+
+.header__logo-img {
+  width: 100%;
 }
 
 .header__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(calc(137/var(--layout-width-sp)*100%), 137px);
+  width: min(calc(137 / var(--layout-width-sp) * 100%), 137px);
   padding: 7px 0;
   border-radius: 18px;
   background: var(--contact-btn);
@@ -100,7 +41,7 @@ body.loaded .section-hero__disease .heading::after {
   font-size: calc(12 * var(--rem-ratio));
   font-family: var(--font-sans);
   font-weight: var(--font-bold);
-  transition: scale .2s ease;
+  transition: scale 0.2s ease;
 }
 
 .l-section-hero {
@@ -124,7 +65,7 @@ body.loaded .section-hero__disease .heading::after {
   left: 50%;
   width: 100vw;
   height: 100%;
-  background: url(../images/hero-bg.jpg);
+  background: url('../images/hero-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   translate: -50%;
@@ -137,74 +78,120 @@ body.loaded .section-hero__disease .heading::after {
   top: 0;
   left: 0;
   width: 100%;
-  margin-top: calc(30/var(--layout-width-sp)*100%);
-  /* padding-top: 30px; */
+  margin-top: calc(30 / var(--layout-width-sp) * 100%);
 }
 
 .section-hero__titleline-pop {
   z-index: 1;
   position: relative;
-  width: calc(228/var(--layout-width-sp)*100%);
-  /* margin-left: calc(14/var(--layout-width-sp)*100%); */
-
+  width: calc(228 / var(--layout-width-sp) * 100%);
   margin-top: 11%;
   margin-left: 20%;
   scale: 1.5;
 }
 
-.section-hero__titleline-pop .elm {
+.section-hero__titleline-pop.loaded {
+  margin-top: 0;
+  margin-left: calc(14 / var(--layout-width-sp) * 100%);
+  scale: 1;
+  transition: 0.9s cubic-bezier(0.65, 0.05, 0.36, 1) 1.2s;
+}
+
+.section-hero__titleline-pop-img {
+  width: 100%;
+}
+
+.section-hero__titleline-pop-elm {
   display: block;
   opacity: 0;
   translate: 0 15px;
 }
 
-.section-hero__titleline-title {
-  position: relative;
-  margin-top: calc(-36/var(--layout-width-sp)*100%);
-  opacity: 0;
-  scale: .7;
+.section-hero__titleline-pop-elm.loaded {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity 0.4s ease 0.3s,
+    translate 0.4s cubic-bezier(0, 0.89, 0.63, 1.47) 0.3s;
 }
 
-.section-hero__titleline-title .word {
+.section-hero__titleline-title {
+  position: relative;
+  margin-top: calc(-36 / var(--layout-width-sp) * 100%);
+  opacity: 0;
+  scale: 0.7;
+}
+
+.section-hero__titleline-title.loaded {
+  opacity: 1;
+  scale: 1;
+  transition:
+    opacity 0.9s cubic-bezier(0.65, 0.05, 0.36, 1) 1.2s,
+    scale 0.9s cubic-bezier(0.65, 0.05, 0.36, 1) 1.2s;
+}
+
+.section-hero__titleline-title-word {
   display: block;
-  width: calc(354/var(--layout-width-sp)*100%);
+  width: calc(354 / var(--layout-width-sp) * 100%);
   margin: auto;
 }
 
-.section-hero__titleline-title .flash-elm {
+.section-hero__titleline-title-flash-elm {
   position: absolute;
   top: 0;
   display: block;
   opacity: 0;
 }
 
-.section-hero__titleline-title .flash-elm1 {
-  /* left: calc(317/var(--layout-width-sp)*100%); */
-  right: calc(60/var(--layout-width-sp)*100%);
-  width: calc(15/var(--layout-width-sp)*100%);
-  margin-top: calc(13/var(--layout-width-sp)*100%);
+.section-hero__titleline-title-flash-elm.loaded {
+  opacity: 1;
+  transition: opacity 0s steps(1);
 }
 
-.section-hero__titleline-title .flash-elm2 {
-  /* left: calc(325/var(--layout-width-sp)*100%); */
-  right: calc(39/var(--layout-width-sp)*100%);
-  width: calc(29/var(--layout-width-sp)*100%);
-  margin-top: calc(16/var(--layout-width-sp)*100%);
+.section-hero__titleline-title-flash-elm--1 {
+  right: calc(60 / var(--layout-width-sp) * 100%);
+  width: calc(15 / var(--layout-width-sp) * 100%);
+  margin-top: calc(13 / var(--layout-width-sp) * 100%);
 }
 
-.section-hero__titleline-title .flash-elm3 {
-  /* left: calc(333/var(--layout-width-sp)*100%); */
-  right: calc(37/var(--layout-width-sp)*100%);
-  width: calc(24/var(--layout-width-sp)*100%);
-  margin-top: calc(35/var(--layout-width-sp)*100%);
+.section-hero__titleline-title-flash-elm--1.loaded {
+  transition-delay: 2.1s;
+}
+
+.section-hero__titleline-title-flash-elm--2 {
+  right: calc(39 / var(--layout-width-sp) * 100%);
+  width: calc(29 / var(--layout-width-sp) * 100%);
+  margin-top: calc(16 / var(--layout-width-sp) * 100%);
+}
+
+.section-hero__titleline-title-flash-elm--2.loaded {
+  transition-delay: 2.4s;
+}
+
+.section-hero__titleline-title-flash-elm--3 {
+  right: calc(37 / var(--layout-width-sp) * 100%);
+  width: calc(24 / var(--layout-width-sp) * 100%);
+  margin-top: calc(35 / var(--layout-width-sp) * 100%);
+}
+
+.section-hero__titleline-title-flash-elm--3.loaded {
+  transition-delay: 2.7s;
+}
+
+.section-hero__titleline-title-flash-elm-img {
+  width: 100%;
+}
+
+.section-hero__titleline-title-flash-elm-img.loaded {
+  animation: flash 3s steps(1) 2.9s;
 }
 
 .section-hero__image {
   z-index: 1;
   position: relative;
-  width: calc(317/var(--layout-width-sp)*100%);
-  margin-left: min(calc(44/var(--layout-width-sp)*100%));
-  padding-top: calc(140/var(--layout-width-sp)*100%);
+  width: calc(317 / var(--layout-width-sp) * 100%);
+  margin-left: min(calc(44 / var(--layout-width-sp) * 100%));
+  padding-top: calc(140 / var(--layout-width-sp) * 100%);
 }
 
 .section-hero__disease {
@@ -212,13 +199,13 @@ body.loaded .section-hero__disease .heading::after {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: calc(var(--layout-width-inner)/var(--layout-width-sp)*100%);
-  margin: 0 auto calc(-8/var(--layout-width-sp)*100%);
+  width: calc(var(--layout-width-inner) / var(--layout-width-sp) * 100%);
+  margin: 0 auto calc(-8 / var(--layout-width-sp) * 100%);
   padding: 16px 0;
   background: var(--color-grayscale-0);
   border: 3px solid var(--common-blue);
   border-radius: 15px;
-  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 4px 4px 0 rgb(0 0 0 / 25%);
   translate: -50%;
 }
 
@@ -226,35 +213,12 @@ body.loaded .section-hero__disease .heading::after {
   translate: -50%;
 }
 
-.section-hero__disease.is-inview .c-hero-disease-list {
-  opacity: 1;
-  scale: 1;
-  transition: opacity .5s ease, scale .5s cubic-bezier(0,.89,.49,1.47);
-}
-
-.section-hero__disease.is-inview .c-hero-disease-list:nth-of-type(1) {
-  transition-delay: .3s;
-}
-
-.section-hero__disease.is-inview .c-hero-disease-list:nth-of-type(2) {
-  transition-delay: .6s;
-}
-
-.section-hero__disease.is-inview .c-hero-disease-list:nth-of-type(3) {
-  transition-delay: .9s;
-}
-
-.section-hero__disease.is-inview .heading::after{
-  transform: scaleX(1);
-  transition: transform 1s ease-out 1.3s;
-}
-
-.section-hero__disease .heading {
-  width: calc(202/var(--layout-width-inner)*100%);
+.section-hero__disease-heading {
+  width: calc(202 / var(--layout-width-inner) * 100%);
   margin: auto;
 }
 
-.section-hero__disease .heading::after {
+.section-hero__disease-heading::after {
   display: block;
   width: 100%;
   height: 2px;
@@ -266,26 +230,54 @@ body.loaded .section-hero__disease .heading::after {
   content: '';
 }
 
+.section-hero__disease.is-inview .section-hero__disease-heading::after {
+  transform: scaleX(1);
+  transition: transform 1s ease-out 1.3s;
+}
+
+.section-hero__disease-heading-img {
+  width: 100%;
+}
+
 .hero-disease-list__wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: calc(15/var(--layout-width-sp)*100%);
-  margin-top: calc(14/var(--layout-width-sp)*100%);
+  gap: calc(15 / var(--layout-width-sp) * 100%);
+  margin-top: calc(14 / var(--layout-width-sp) * 100%);
 }
 
 .c-hero-disease-list {
-  width: calc(100/var(--layout-width-inner)*100%);
+  width: calc(100 / var(--layout-width-inner) * 100%);
   opacity: 0;
-  scale: .6;
+  scale: 0.6;
+}
+
+.section-hero__disease.is-inview .c-hero-disease-list {
+  opacity: 1;
+  scale: 1;
+  transition:
+    opacity 0.5s ease,
+    scale 0.5s cubic-bezier(0, 0.89, 0.49, 1.47);
+}
+
+.section-hero__disease.is-inview .c-hero-disease-list:nth-of-type(1) {
+  transition-delay: 0.3s;
+}
+
+.section-hero__disease.is-inview .c-hero-disease-list:nth-of-type(2) {
+  transition-delay: 0.6s;
+}
+
+.section-hero__disease.is-inview .c-hero-disease-list:nth-of-type(3) {
+  transition-delay: 0.9s;
 }
 
 .c-hero-disease-list--small {
-  width: calc(90/var(--layout-width-inner)*100%);
-} 
+  width: calc(90 / var(--layout-width-inner) * 100%);
+}
 
 .c-hero-disease-list__heading {
-  border-radius: 5px;
   background: var(--common-yellow);
   border-radius: 5px;
   font-family: var(--font-sans);
@@ -299,7 +291,7 @@ body.loaded .section-hero__disease .heading::after {
 .c-hero-disease-list__text {
   margin-top: 10px;
   font-family: var(--font-sans-display);
-  font-size: cal(14 * var(--rem-ratio));
+  font-size: calc(14 * var(--rem-ratio));
   color: var(--common-blue);
   text-align: center;
   line-height: 1;
@@ -312,23 +304,26 @@ body.loaded .section-hero__disease .heading::after {
 }
 
 .section-topmessage__logo {
-  width: min(calc(246/var(--layout-width-sp)*100%), calc(246px * 1.5));
+  width: min(calc(246 / var(--layout-width-sp) * 100%), calc(246px * 1.5));
   margin: 0 auto 18px;
 }
 
 .c-freeshiryou-btn {
   display: block;
-  width: min(calc(330/var(--layout-width-sp)*100%), calc(330px * 1.5));
+  width: min(calc(330 / var(--layout-width-sp) * 100%), calc(330px * 1.5));
   margin: 14px auto 0;
-  transition: scale .2s ease;
+  transition: scale 0.2s ease;
 }
 
 .c-freeshiryou-pop {
   z-index: 2;
   position: relative;
-  /* width: min(calc(145/var(--layout-width-sp)*100%), calc(145px * 1.5)); */
-  width: min(calc((145/330)*100%), calc(145px * 1.5));
+  width: min(calc((145 / 330) * 100%), calc(145px * 1.5));
   margin: auto;
+}
+
+.c-freeshiryou-pop-img {
+  width: 100%;
 }
 
 .c-freeshiryou-btn__link {
@@ -338,16 +333,19 @@ body.loaded .section-hero__disease .heading::after {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* width: min(calc(330/var(--layout-width-sp)*100%), calc(330px * 1.5)); */
-  margin: calc(-22/var(--layout-width-sp)*100%) auto 0;
+  margin: calc(-22 / var(--layout-width-sp) * 100%) auto 0;
   padding: 13px 20px;
   background: var(--contact-btn);
   border-radius: 30px;
-  box-shadow: 0px 6px 6px 0px rgba(195, 184, 186, 1);
+  box-shadow: 0 6px 6px 0 rgb(195 184 186 / 100%);
 }
 
 .c-freeshiryou-btn__icon {
-  width: min(calc((23/330)*100%), 23px);
+  width: min(calc((23 / 330) * 100%), 23px);
+}
+
+.c-freeshiryou-btn__icon-img {
+  width: 100%;
 }
 
 .c-freeshiryou-btn__text {
@@ -358,7 +356,11 @@ body.loaded .section-hero__disease .heading::after {
 }
 
 .c-freeshiryou-btn__arrow {
-  width: min(calc((13/330)*100%), 13px);
+  width: min(calc((13 / 330) * 100%), 13px);
+}
+
+.c-freeshiryou-btn__arrow-img {
+  width: 100%;
 }
 
 .l-section-kokuchi {
@@ -371,35 +373,40 @@ body.loaded .section-hero__disease .heading::after {
 .section-kokuchi__heading-wrap {
   z-index: 2;
   position: relative;
-  width: min(calc(218/var(--layout-width-sp)*100%), calc(218px * 1.3));
+  width: min(calc(218 / var(--layout-width-sp) * 100%), calc(218px * 1.3));
   margin: auto;
 }
 
 .section-kokuchi__heading-wrap.is-inview .section-kokuchi__pop {
   opacity: 1;
   transform: scale(1);
-  transition: opacity .4s ease .3s, transform .4s cubic-bezier(0,.89,.63,1.47) .3s;
+  transition:
+    opacity 0.4s ease 0.3s,
+    transform 0.4s cubic-bezier(0, 0.89, 0.63, 1.47) 0.3s;
 }
 
 .section-kokuchi__pop {
   z-index: 2;
   position: absolute;
   top: 0;
-  left: calc((-20/218)*100%);
-  width: min(calc((56/218)*100%), calc(56px * 1.3));
-  margin-top: calc((-25/218)*100%);
+  left: calc((-20 / 218) * 100%);
+  width: min(calc((56 / 218) * 100%), calc(56px * 1.3));
+  margin-top: calc((-25 / 218) * 100%);
   opacity: 0;
   transform: scale(0.5);
   transform-origin: right bottom;
 }
 
+.section-kokuchi__pop-img {
+  width: 100%;
+}
+
 .section-kokuchi__qa {
   z-index: 1;
   position: relative;
-  /* width: min(calc(360/var(--layout-width-sp)*100%), calc(360px * 2)); */
-  width: min(calc(360/var(--layout-width-sp)*100%), 768px);
+  width: min(calc(360 / var(--layout-width-sp) * 100%), 768px);
   margin: auto;
-  margin-top: calc(-40/var(--layout-width-sp)*100%);
+  margin-top: calc(-40 / var(--layout-width-sp) * 100%);
   padding: 36px 0 30px;
   background: var(--color-grayscale-0);
   border: 3px solid var(--common-blue);
@@ -407,7 +414,7 @@ body.loaded .section-hero__disease .heading::after {
 }
 
 .section-kokuchi__attention {
-  width: min(calc(var(--layout-width-inner)/var(--layout-width-sp)*100%), 768px);
+  width: min(calc(var(--layout-width-inner) / var(--layout-width-sp) * 100%), 768px);
   margin: 20px auto 0;
   font-family: var(--font-sans-display);
   font-weight: var(--font-normal);
@@ -419,9 +426,9 @@ body.loaded .section-hero__disease .heading::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(calc(80/var(--layout-width-inner)*100%), calc(80px * 1.3));
+  width: min(calc(80 / var(--layout-width-inner) * 100%), calc(80px * 1.3));
   padding: 4px 0;
-  margin-left: calc(30/var(--layout-width-inner)*100%);
+  margin-left: calc(30 / var(--layout-width-inner) * 100%);
   background: var(--common-yellow);
   border-radius: 5px;
   font-family: var(--font-sans);
@@ -432,7 +439,7 @@ body.loaded .section-hero__disease .heading::after {
 }
 
 .c-kokuchi-question__text {
-  width: calc(300/var(--layout-width-inner)*100%);
+  width: calc(300 / var(--layout-width-inner) * 100%);
   margin: 12px auto 0;
   font-family: var(--font-sans);
   font-weight: var(--font-normal);
@@ -444,7 +451,7 @@ body.loaded .section-hero__disease .heading::after {
 .c-kokuchi-question__btnbox {
   display: flex;
   justify-content: center;
-  gap: min(calc(25/var(--layout-width-inner)*100%), 25px);
+  gap: min(calc(25 / var(--layout-width-inner) * 100%), 25px);
   margin: 14px auto 0;
 }
 
@@ -452,19 +459,21 @@ body.loaded .section-hero__disease .heading::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(calc((128/var(--layout-width-inner))*100%), calc(128px * 1.3));
+  width: min(calc((128 / var(--layout-width-inner)) * 100%), calc(128px * 1.3));
   padding: 6px 0;
   background: var(--background-yellow);
   border-radius: 12px;
   border: 2px solid var(--common-blue);
-  box-shadow: 3.56px 3.56px 0px 0px rgba(0, 94, 164, 1);
+  box-shadow: 3.56px 3.56px 0 0 rgb(0 94 164 / 100%);
   font-family: var(--font-sans);
   font-weight: var(--font-semibold);
   font-size: calc(22 * var(--rem-ratio));
   color: var(--common-blue);
   line-height: normal;
   cursor: pointer;
-  transition: translate .2s ease, box-shadow .2s ease;
+  transition:
+    translate 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .c-kokuchi-question__btnbox-btn.active {
@@ -477,22 +486,19 @@ body.loaded .section-hero__disease .heading::after {
   margin-top: 40px;
 }
 
-#kokuchiPattern1 {
+.c-kokuchi-pattern--1 {
   display: none;
 }
 
-#kokuchiPattern2 {
+.c-kokuchi-pattern--2 {
   display: none;
 }
 
-#kokuchiPattern3 {
+.c-kokuchi-pattern--3 {
   display: none;
 }
 
-#kokuchiPattern4 {
-  display: none;
-}
-#kokuchiPattern4 {
+.c-kokuchi-pattern--4 {
   display: none;
 }
 
@@ -502,7 +508,7 @@ body.loaded .section-hero__disease .heading::after {
   margin: 40px auto 0;
   border-style: solid;
   border-color: var(--parts) transparent transparent transparent;
-  border-width: 25px 69.5px 0px 69.5px;
+  border-width: 25px 69.5px 0;
 }
 
 .c-kokuchi-answer__text {
@@ -512,21 +518,21 @@ body.loaded .section-hero__disease .heading::after {
   font-size: calc(15 * var(--rem-ratio));
   font-feature-settings: 'palt';
   color: var(--font-base);
-  line-height: calc(23/15);
+  line-height: calc(23 / 15);
   text-align: center;
 }
 
 .c-kokuchi-answer__btn {
   position: relative;
   display: block;
-  width: min(calc(253/var(--layout-width-inner)*100%), calc(253px * 1.3));
+  width: min(calc(253 / var(--layout-width-inner) * 100%), calc(253px * 1.3));
   margin: 23px auto 0;
-  transition: scale .2s ease;
+  transition: scale 0.2s ease;
 }
 
 .c-kokuchi-answer__btn--free-shiryou {
   z-index: 1;
-  width: min(calc(282/var(--layout-width-inner)*100%), calc(282px * 1.3));
+  width: min(calc(282 / var(--layout-width-inner) * 100%), calc(282px * 1.3));
 }
 
 .c-kokuchi-answer__btn-link {
@@ -542,28 +548,28 @@ body.loaded .section-hero__disease .heading::after {
   font-size: calc(18 * var(--rem-ratio));
   color: var(--color-grayscale-0);
   line-height: normal;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .c-kokuchi-answer__btn-link--free-shiryou {
-  margin-top: calc((-17/282)*100%);
+  margin-top: calc((-17 / 282) * 100%);
   padding: 10px 0;
-  box-shadow: 0px 6px 6px 0px rgba(195, 184, 186, 1);
+  box-shadow: 0 6px 6px 0 rgb(195 184 186 / 100%);
 }
 
-.c-kokuchi-answer__btn .small {
+.c-kokuchi-answer__btn-link-small {
   font-size: calc(16 * var(--rem-ratio));
 }
 
 .c-kokuchi-answer__btn-link::before {
   position: absolute;
   top: 50%;
-  right: min(calc((17/var(--layout-width-sp))*100vw), 17px);
+  right: min(calc((17 / var(--layout-width-sp)) * 100vw), 17px);
   width: 0;
   height: 0;
   border-style: solid;
   border-color: transparent transparent transparent var(--color-grayscale-0);
-  border-width: 6px 0px 6px 10.39px;
+  border-width: 6px 0 6px 10.39px;
   translate: 0 -50%;
   content: '';
 }
@@ -576,8 +582,12 @@ body.loaded .section-hero__disease .heading::after {
   z-index: 2;
   position: relative;
   display: block;
-  width: min(calc((249/282)*100%), calc(249px * 1.3));
+  width: min(calc((249 / 282) * 100%), calc(249px * 1.3));
   margin: auto;
+}
+
+.c-kokuchi-answer__btn-pop-img {
+  width: 100%;
 }
 
 .l-section-points {
@@ -594,24 +604,27 @@ body.loaded .section-hero__disease .heading::after {
 }
 
 .c-section-heading--point {
-  width: min(calc(247/var(--layout-width-sp)*100%), calc(247px * 1.3));
+  width: min(calc(247 / var(--layout-width-sp) * 100%), calc(247px * 1.3));
 }
 
 .c-section-heading--plans {
-  width: min(calc(222/var(--layout-width-sp)*100%), calc(222px * 1.3));
+  width: min(calc(222 / var(--layout-width-sp) * 100%), calc(222px * 1.3));
 }
 
 .c-section-heading--qa {
-  width: min(calc(222/var(--layout-width-sp)*100%), calc(222px * 1.3));
+  width: min(calc(222 / var(--layout-width-sp) * 100%), calc(222px * 1.3));
 }
 
 .c-section-heading--shiryou {
-  width: min(calc(222/var(--layout-width-sp)*100%), calc(222px * 1.3));
+  width: min(calc(222 / var(--layout-width-sp) * 100%), calc(222px * 1.3));
+}
+
+.c-section-heading-img {
+  width: 100%;
 }
 
 .section-points__inner {
-  /* width: min(calc(360/var(--layout-width-sp)*100%), calc(360px * 2)); */
-  width: min(calc(360/var(--layout-width-sp)*100%), 768px);
+  width: min(calc(360 / var(--layout-width-sp) * 100%), 768px);
   margin: 14px auto 0;
 }
 
@@ -629,7 +642,7 @@ body.loaded .section-hero__disease .heading::after {
   display: flex;
   width: fit-content;
   gap: 22px;
-  margin-left: min(calc(18/var(--layout-width-sp)*100%), 18px);
+  margin-left: min(calc(18 / var(--layout-width-sp) * 100%), 18px);
   padding: 6px 12px;
   background: var(--color-grayscale-0);
   border-radius: 32px;
@@ -648,21 +661,20 @@ body.loaded .section-hero__disease .heading::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: min(calc((14/360)*100%), 14px);
+  gap: min(calc((14 / 360) * 100%), 14px);
   margin-top: -16px;
   padding: 35px 20px 24px;
-  background: var(--common-blue);
   border-radius: 15px;
   background: linear-gradient(-45deg, var(--common-blue) 50%, var(--shine) 60%, var(--common-blue) 70%);
   background-size: 600% 100%;
 }
 
 .c-points-list__info.animate {
-  animation: shine 3.8s linear forwards; 
+  animation: shine 3.8s linear forwards;
 }
 
 .c-points-list__info-icon {
-  width: min(calc((82/320)*100%), calc(82px * 1.3));
+  width: min(calc((82 / 320) * 100%), calc(82px * 1.3));
 }
 
 .c-points-list__info-text {
@@ -694,7 +706,6 @@ body.loaded .section-hero__disease .heading::after {
 }
 
 .section-plans__list-wrapper {
-  /* width: min(calc(var(--layout-width-inner)/var(--layout-width-sp)*100%), 360px); */
   margin: 5px auto 0;
 }
 
@@ -702,7 +713,7 @@ body.loaded .section-hero__disease .heading::after {
   position: relative;
   display: flex;
   align-items: center;
-  width: min(calc(200/var(--layout-width-sp)*100%), 200px);
+  width: min(calc(200 / var(--layout-width-sp) * 100%), 200px);
   margin: 20px auto 0;
 }
 
@@ -711,7 +722,7 @@ body.loaded .section-hero__disease .heading::after {
 }
 
 .swiper-pagination-bullet {
-  width: min((calc(10/55)*100%), 10px);
+  width: min((calc(10 / 55) * 100%), 10px);
   height: auto;
   aspect-ratio: 1/1;
   background: var(--parts);
@@ -726,34 +737,36 @@ body.loaded .section-hero__disease .heading::after {
   background: var(--common-blue);
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   position: static;
   width: 0;
   height: 0;
   margin: 0;
   border-style: solid;
-  transition: scale .2s ease, transform .2s ease;
+  transition:
+    scale 0.2s ease,
+    transform 0.2s ease;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   content: none;
 }
 
 .swiper-button-prev {
-  border-width: 11.5px 19.92px 11.5px 0px;
+  border-width: 11.5px 19.92px 11.5px 0;
   border-color: transparent var(--common-blue) transparent transparent;
 }
 
 .swiper-button-next {
   margin-left: auto;
-  border-width: 11.5px 0px 11.5px 19.92px;
+  border-width: 11.5px 0 11.5px 19.92px;
   border-color: transparent transparent transparent var(--common-blue);
 }
 
-
 .c-plans-list {
-  /* width: min(calc(var(--layout-width-inner)/var(--layout-width-sp)*100%) , calc(360px * 2)); */
-  width: min(calc(var(--layout-width-inner)/var(--layout-width-sp)*100%) , 768px);
+  width: min(calc(var(--layout-width-inner) / var(--layout-width-sp) * 100%), 768px);
   margin: auto;
   padding: 30px 0 23px;
   border-radius: 20px;
@@ -764,28 +777,28 @@ body.loaded .section-hero__disease .heading::after {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: calc(310/var(--layout-width-inner)*100%);
+  width: calc(310 / var(--layout-width-inner) * 100%);
   margin: auto;
 }
 
-.c-plans-list__headline .image1 {
-  width: min(calc((74/310)*100%), calc(74px * 1.5));
+.c-plans-list__headline-image--1 {
+  width: min(calc((74 / 310) * 100%), calc(74px * 1.5));
 }
 
-.c-plans-list__headline .image2 {
-  width: min(calc((64/310)*100%), calc(64px * 1.5));
+.c-plans-list__headline-image--2 {
+  width: min(calc((64 / 310) * 100%), calc(64px * 1.5));
 }
 
-.c-plans-list__headline .image3 {
-  width: min(calc((64/310)*100%), calc(64px * 1.5));
+.c-plans-list__headline-image--3 {
+  width: min(calc((64 / 310) * 100%), calc(64px * 1.5));
 }
 
-.c-plans-list__headline .heading {
+.c-plans-list__headline-heading {
   flex: 1;
-  margin-left: calc((10/310)*100%);
+  margin-left: calc((10 / 310) * 100%);
 }
 
-.c-plans-list__headline .heading::after {
+.c-plans-list__headline-heading::after {
   display: block;
   width: 100%;
   height: 4px;
@@ -793,86 +806,86 @@ body.loaded .section-hero__disease .heading::after {
   content: '';
 }
 
-.c-plans-list__headline .heading .sub {
+.c-plans-list__headline-heading-sub {
   font-family: var(--font-sans-display);
   font-weight: var(--font-normal);
   font-size: calc(12 * var(--rem-ratio));
   color: var(--plans-gray);
 }
 
-.c-plans-list__headline .heading .main {
+.c-plans-list__headline-heading-main {
   font-family: var(--font-sans-display);
   font-weight: var(--font-bold);
   font-size: calc(22 * var(--rem-ratio));
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   color: var(--plans-gray);
 }
 
 .c-plans-list__customer {
-  width: calc(310/var(--layout-width-inner)*100%);
+  width: calc(310 / var(--layout-width-inner) * 100%);
   margin: 8px auto 0;
 }
 
-.c-plans-list__customer .customer-line {
+.c-plans-list__customer-line {
   display: flex;
   color: var(--plans-gray);
   line-height: normal;
 }
 
-.c-plans-list__customer .customer-line .text {
+.c-plans-list__customer-text {
   font-family: var(--font-sans);
   font-weight: var(--font-normal);
   font-size: calc(13 * var(--rem-ratio));
 }
 
-.c-plans-list__customer .customer-line .text .gender {
+.c-plans-list__customer-gender {
   margin-left: 1rem;
 }
 
-.c-plans-list__customer .customer-line .price {
-  margin-left: .8rem;
+.c-plans-list__customer-price {
+  margin-left: 0.8rem;
   font-family: var(--font-sans);
   font-weight: var(--font-bold);
   font-size: calc(14 * var(--rem-ratio));
   font-feature-settings: 'palt';
 }
 
-.c-plans-list__customer .customer-line .term {
+.c-plans-list__customer-term {
   font-family: var(--font-sans-display);
   font-weight: var(--font-normal);
   font-size: calc(12 * var(--rem-ratio));
   font-feature-settings: 'palt';
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .heading {
+.c-plans-list__heading {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(calc(58/var(--layout-width-inner)*100%), 87px);
+  width: min(calc(58 / var(--layout-width-inner) * 100%), 87px);
   font-family: var(--font-sans-display);
   font-weight: var(--font-normal);
   font-size: calc(15 * var(--rem-ratio));
   color: var(--color-grayscale-0);
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .heading--gray {
+.c-plans-list__heading--gray {
   background: var(--plans-gray);
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .heading--blue {
+.c-plans-list__heading--blue {
   background: var(--common-blue);
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .plus {
+.c-plans-list__item-plus {
   position: relative;
-  width: min(calc(10/var(--layout-width-inner)*100%), 15px);
+  width: min(calc(10 / var(--layout-width-inner) * 100%), 15px);
   aspect-ratio: 1/1;
   margin: 10px 0;
-  margin-left: calc(47/var(--layout-width-inner)*100%);
+  margin-left: calc(47 / var(--layout-width-inner) * 100%);
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .plus::before {
+.c-plans-list__item-plus::before {
   display: block;
   width: 3px;
   height: 100%;
@@ -882,7 +895,7 @@ body.loaded .section-hero__disease .heading::after {
   content: '';
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .plus::after {
+.c-plans-list__item-plus::after {
   position: absolute;
   top: 50%;
   left: 0;
@@ -895,36 +908,36 @@ body.loaded .section-hero__disease .heading::after {
   content: '';
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .col {
+.c-plans-list__col {
   display: flex;
-  gap: min(calc(10/var(--layout-width-inner)*100%), 10px);
-  margin: 18px 0 0 calc(23/var(--layout-width-inner)*100%);
+  gap: min(calc(10 / var(--layout-width-inner) * 100%), 10px);
+  margin: 18px 0 0 calc(23 / var(--layout-width-inner) * 100%);
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .col:nth-child(3) {
+.c-plans-list__col:nth-child(3) {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .col--single {
+.c-plans-list__col--single {
   justify-content: center;
-  gap: min(calc(30/var(--layout-width-inner)*100%), 30px);
+  gap: min(calc(30 / var(--layout-width-inner) * 100%), 30px);
   margin: 34px 0 43px;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .col--one-line {
+.c-plans-list__col--one-line {
   align-items: center;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .col .keiyaku-list-wrap {
+.c-plans-list__list-wrap {
   width: 76%;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .col--single .keiyaku-list-wrap {
+.c-plans-list__list-wrap--single {
   width: fit-content;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .col .keiyaku-list-wrap .keiyaku-list {
+.c-plans-list__item {
   font-family: var(--font-sans);
   font-weight: var(--font-normal);
   font-size: calc(14 * var(--rem-ratio));
@@ -933,19 +946,15 @@ body.loaded .section-hero__disease .heading::after {
   line-height: 1.3;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box1 .col .keiyaku-list-wrap .keiyaku-list .list-style {
+.c-plans-list__item-icon {
   color: var(--common-blue);
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 {
- 
-}
-
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .headline {
+.c-plans-list__keiyaku-heading {
   position: relative;
   display: flex;
   align-items: center;
-  width: min(calc(337/var(--layout-width-inner)*100%), 674px);
+  width: min(calc(337 / var(--layout-width-inner) * 100%), 674px);
   padding: 7px 0 7px 13px;
   background: var(--common-yellow);
   font-family: var(--font-sans);
@@ -953,7 +962,8 @@ body.loaded .section-hero__disease .heading::after {
   line-height: 1;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .headline::before, .c-plans-list__keiyaku-detail .keiyaku-detail-box2 .headline::after {
+.c-plans-list__keiyaku-heading::before,
+.c-plans-list__keiyaku-heading::after {
   position: absolute;
   right: -13px;
   width: 0;
@@ -962,42 +972,42 @@ body.loaded .section-hero__disease .heading::after {
   content: '';
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .headline::before {
+.c-plans-list__keiyaku-heading::before {
   top: 0;
   border-color: var(--common-yellow) transparent transparent transparent;
-  border-width: 15px 13px 0px 0px;
+  border-width: 15px 13px 0 0;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .headline::after {
+.c-plans-list__keiyaku-heading::after {
   bottom: 0;
   border-color: transparent transparent transparent var(--common-yellow);
-  border-width: 15px 0px 0px 13px;
+  border-width: 15px 0 0 13px;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata {
+.c-plans-list__data {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-item {
+.c-plans-list__data-item {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: min(calc(114/var(--layout-width-inner)*100%), calc(114px * 1.5));
+  width: min(calc(114 / var(--layout-width-inner) * 100%), calc(114px * 1.5));
   aspect-ratio: 1/1;
   background: var(--common-blue);
   border-radius: 100%;
   text-align: center;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-item--small {
-  width: min(calc(98/var(--layout-width-inner)*100%), calc(98px * 1.5));
+.c-plans-list__data-item--small {
+  width: min(calc(98 / var(--layout-width-inner) * 100%), calc(98px * 1.5));
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-text {
+.c-plans-list__data-text {
   font-family: var(--font-sans-display);
   font-weight: var(--font-normal);
   font-feature-settings: 'palt';
@@ -1005,44 +1015,44 @@ body.loaded .section-hero__disease .heading::after {
   line-height: 1.2;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-text--small {
+.c-plans-list__data-text--small {
   font-size: calc(13 * var(--rem-ratio));
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-price {
-  margin-top: calc((10/114)*100%);
+.c-plans-list__data-price {
+  margin-top: calc((10 / 114) * 100%);
   font-family: var(--font-sans);
   font-weight: var(--font-bold);
-  font-size: calc(20 * var(--rem-ratio));
+  font-size: calc(19 * var(--rem-ratio));
   color: var(--color-grayscale-0);
   line-height: 1;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-price--small {
+.c-plans-list__data-price--small {
   font-size: calc(15 * var(--rem-ratio));
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-price .num {
+.c-plans-list__data-num {
   font-size: calc(24 * var(--rem-ratio));
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-price--small .num {
+.c-plans-list__data-num--small {
   font-size: calc(20 * var(--rem-ratio));
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-plus-icon {
+.c-plans-list__data-plus-icon {
   position: relative;
-  width: min(calc(21/var(--layout-width-inner)*100%), calc(21px * 1.5));
+  width: min(calc(21 / var(--layout-width-inner) * 100%), calc(21px * 1.5));
   aspect-ratio: 1/1;
-  margin: 0 min(calc(10/var(--layout-width-inner)*100%), 10px);
+  margin: 0 min(calc(10 / var(--layout-width-inner) * 100%), 10px);
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-plus-icon--small {
-  width: min(calc(16/var(--layout-width-inner)*100%), calc(16px * 1.5));
-  margin: 0 min(calc(3/var(--layout-width-inner)*100%), 3px);
+.c-plans-list__data-plus-icon--small {
+  width: min(calc(16 / var(--layout-width-inner) * 100%), calc(16px * 1.5));
+  margin: 0 min(calc(3 / var(--layout-width-inner) * 100%), 3px);
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-plus-icon::before {
+.c-plans-list__data-plus-icon::before {
   display: block;
   width: 5px;
   height: 100%;
@@ -1052,7 +1062,7 @@ body.loaded .section-hero__disease .heading::after {
   content: '';
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-plus-icon::after {
+.c-plans-list__data-plus-icon::after {
   position: absolute;
   top: 50%;
   left: 0;
@@ -1065,7 +1075,7 @@ body.loaded .section-hero__disease .heading::after {
   content: '';
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .catch {
+.c-plans-list__catch {
   margin-top: 5px;
   font-family: var(--font-sans);
   font-weight: var(--font-bold);
@@ -1074,12 +1084,12 @@ body.loaded .section-hero__disease .heading::after {
   line-height: normal;
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .catch--large {
+.c-plans-list__catch--large {
   font-size: calc(32 * var(--rem-ratio));
   color: var(--common-blue);
 }
 
-.c-plans-list__keiyaku-detail .keiyaku-detail-box2 .catch--blue {
+.c-plans-list__catch--blue {
   font-size: calc(16 * var(--rem-ratio));
   color: var(--common-blue);
 }
@@ -1100,13 +1110,13 @@ body.loaded .section-hero__disease .heading::after {
 
 .section-btmmessage__heading.is-inview .section-btmmessage__heading-text {
   clip-path: inset(0 0 0 0);
-  transition: clip-path .6s ease-out .8s;
-} 
+  transition: clip-path 0.6s ease-out 0.8s;
+}
 
 .section-btmmessage__heading-bg {
   z-index: 1;
   position: relative;
-  width: min(calc(319/var(--layout-width-sp)*100%), calc(319px * 1.5));
+  width: min(calc(319 / var(--layout-width-sp) * 100%), calc(319px * 1.5));
   margin: auto;
   scale: 0;
 }
@@ -1116,20 +1126,20 @@ body.loaded .section-hero__disease .heading::after {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: min(calc(232/var(--layout-width-sp)*100%), calc(232px * 1.3));
+  width: min(calc(232 / var(--layout-width-sp) * 100%), calc(232px * 1.3));
   clip-path: inset(0 100% 0 0);
   translate: -50% -50%;
 }
 
-.section-btmmessage__heading-text img {
+.section-btmmessage__heading-text-img {
   width: 100%;
 }
 
 .section-btmmessage__image {
   z-index: 2;
   position: relative;
-  width: min(calc(204/var(--layout-width-sp)*100%), calc(204px * 1.5));
-  margin: max(calc(-48/var(--layout-width-sp)*100%), calc(-48px * 1.5)) auto 0;
+  width: min(calc(204 / var(--layout-width-sp) * 100%), calc(204px * 1.5));
+  margin: max(calc(-48 / var(--layout-width-sp) * 100%), calc(-48px * 1.5)) auto 0;
 }
 
 .l-section-qa {
@@ -1137,8 +1147,7 @@ body.loaded .section-hero__disease .heading::after {
 }
 
 .c-qa-accordion {
-  /* width: min(calc(var(--layout-width-inner)/var(--layout-width-sp)*100%), calc(360px * 2)); */
-  width: min(calc(var(--layout-width-inner)/var(--layout-width-sp)*100%), 768px);
+  width: min(calc(var(--layout-width-inner) / var(--layout-width-sp) * 100%), 768px);
   margin: auto;
 }
 
@@ -1154,7 +1163,7 @@ body.loaded .section-hero__disease .heading::after {
   position: relative;
   display: flex;
   align-items: flex-start;
-  gap: min(calc(8/var(--layout-width-inner)*100%), 8px);
+  gap: min(calc(8 / var(--layout-width-inner) * 100%), 8px);
   padding-top: 8px;
   padding-left: 12px;
   border-top: 2px solid var(--common-blue);
@@ -1164,15 +1173,19 @@ body.loaded .section-hero__disease .heading::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(calc(20/var(--layout-width-inner)*100%), calc(20px * 1.5));
+  width: min(calc(20 / var(--layout-width-inner) * 100%), calc(20px * 1.5));
   aspect-ratio: 1/1;
   border-radius: 100%;
   border: 2px solid var(--font-base);
 }
 
-.c-qa-box__question-icon .elm {
+.c-qa-box__question-icon-elm {
   display: block;
-  width: min(calc((14/20)*100%), calc(14px * 1.5));
+  width: min(calc((14 / 20) * 100%), calc(14px * 1.5));
+}
+
+.c-qa-box__question-icon-img {
+  width: 100%;
 }
 
 .c-qa-box__question-text {
@@ -1187,10 +1200,10 @@ body.loaded .section-hero__disease .heading::after {
   top: 10px;
   right: 11px;
   display: block;
-  width: min(calc(16/var(--layout-width-inner)*100%), 16px);
+  width: min(calc(16 / var(--layout-width-inner) * 100%), 16px);
   aspect-ratio: 1/1;
   rotate: 45deg;
-  transition: scale .2s ease;
+  transition: scale 0.2s ease;
 }
 
 .c-qa-box__question-close::before {
@@ -1220,7 +1233,7 @@ body.loaded .section-hero__disease .heading::after {
 .c-qa-box__answer {
   display: flex;
   align-items: flex-start;
-  gap: min(calc(8/var(--layout-width-inner)*100%), 8px);
+  gap: min(calc(8 / var(--layout-width-inner) * 100%), 8px);
   margin-top: 8px;
   padding-left: 12px;
 }
@@ -1237,15 +1250,19 @@ body.loaded .section-hero__disease .heading::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(calc(20/var(--layout-width-inner)*100%), calc(20px * 1.5));
+  width: min(calc(20 / var(--layout-width-inner) * 100%), calc(20px * 1.5));
   aspect-ratio: 1/1;
   border-radius: 100%;
   border: 2px solid var(--font-base);
 }
 
-.c-qa-box__answer-icon .elm {
+.c-qa-box__answer-icon-elm {
   display: block;
-  width: min(calc((12/20)*100%), calc(12px * 1.5));
+  width: min(calc((12 / 20) * 100%), calc(12px * 1.5));
+}
+
+.c-qa-box__answer-icon-img {
+  width: 100%;
 }
 
 .l-section-shiryou {
@@ -1266,31 +1283,33 @@ body.loaded .section-hero__disease .heading::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(calc(290/var(--layout-width-inner)*100%), calc(290px * 1.3));
-  gap: calc(8/var(--layout-width-inner)*100%);
+  width: min(calc(290 / var(--layout-width-inner) * 100%), calc(290px * 1.3));
+  gap: calc(8 / var(--layout-width-inner) * 100%);
   padding: 10px 0;
   margin: auto;
   background: #fff;
-  box-shadow: inset -3.09px -3.09px 4.11px 0px rgba(200, 200, 199, 1), 0px 4.11px 4.11px 0px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    inset -3.09px -3.09px 4.11px 0 rgb(200 200 199 / 100%),
+    0 4.11px 4.11px 0 rgb(0 0 0 / 50%);
   border-radius: 10px;
 }
 
 .footer__telbtn-icon {
-  width: min(calc((32/290)*100%), 32px);
+  width: min(calc((32 / 290) * 100%), 32px);
 }
 
-.footer__telbtn-textarea {
+.footer__telbtn-info {
   text-align: center;
 }
 
-.footer__telbtn-textarea .phone-num {
+.footer__telbtn-info-num {
   font-family: var(--font-sans-jp);
   font-weight: var(--font-bold);
   font-size: calc(21 * var(--rem-ratio));
   color: var(--common-blue);
 }
 
-.footer__telbtn-textarea .time {
+.footer__telbtn-info-time {
   font-family: var(--font-sans-jp);
   font-weight: var(--font-normal);
   font-size: calc(17 * var(--rem-ratio));
@@ -1307,7 +1326,7 @@ body.loaded .section-hero__disease .heading::after {
   padding: 0 20px;
 }
 
-.footer__links-list {
+.footer__links-list-item {
   font-family: var(--font-sans-display);
   font-weight: var(--font-normal);
   font-size: calc(14 * var(--rem-ratio));
@@ -1315,20 +1334,20 @@ body.loaded .section-hero__disease .heading::after {
   line-height: 1.3;
 }
 
-.footer__links-list + * {
+.footer__links-list-item + * {
   margin-top: 18px;
 }
 
-.footer__links-list .text-link {
+.footer__links-list-item-text-link{
   display: inline-block;
   border-bottom: 1px solid var(--color-grayscale-0);
-  transition: border-bottom .2s ease;
+  transition: border-bottom 0.2s ease;
 }
 
 .footer__textlink {
   display: inline-block;
   margin-top: 47px;
-  margin-left: calc(20/var(--layout-width-sp)*100%);
+  margin-left: calc(20 / var(--layout-width-sp) * 100%);
   border-bottom: 1px solid var(--color-grayscale-0);
   font-family: var(--font-sans-display);
   font-weight: var(--font-normal);
@@ -1336,11 +1355,11 @@ body.loaded .section-hero__disease .heading::after {
   font-feature-settings: 'palt';
   color: var(--color-grayscale-0);
   line-height: 1.1;
-  transition: border-bottom .2s ease;
+  transition: border-bottom 0.2s ease;
 }
 
 .footer__num {
-  margin-left: calc(20/var(--layout-width-sp)*100%);
+  margin-left: calc(20 / var(--layout-width-sp) * 100%);
   font-family: var(--font-sans-display);
   font-weight: var(--font-normal);
   font-size: calc(12 * var(--rem-ratio));
@@ -1361,58 +1380,95 @@ body.loaded .section-hero__disease .heading::after {
   .l-section-hero {
     padding-bottom: 47px;
   }
-  .section-kokuchi__attention, .section-points__attention {
+
+  .section-kokuchi__attention,
+  .section-points__attention {
     font-size: calc(12 * var(--rem-ratio));
   }
-  .swiper-button-next:hover, .swiper-button-prev:hover {
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
     scale: 1.2;
   }
+
   .c-kokuchi-question__btnbox-btn:hover {
     box-shadow: none;
     translate: 3.56px 3.56px;
   }
+
   .c-freeshiryou-btn__text {
     font-size: calc(20 * var(--rem-ratio));
   }
-  .c-plans-list__headline .heading .sub, .c-plans-list__customer .customer-line .text, .c-plans-list__customer .customer-line .term {
-    font-size: calc(15* var(--rem-ratio));
+
+  .c-plans-list__headline-heading-sub,
+  .c-plans-list__customer-text,
+  .c-plans-list__customer-term {
+    font-size: calc(15 * var(--rem-ratio));
   }
-  .c-plans-list__headline .heading .main, .c-kokuchi-question__btnbox-btn {
+
+  .c-plans-list__headline-heading-main,
+  .c-kokuchi-question__btnbox-btn {
     font-size: calc(25 * var(--rem-ratio));
   }
-  .c-hero-disease-list__text, .c-plans-list__customer .customer-line .price, .c-plans-list__keiyaku-detail .keiyaku-detail-box1 .col .keiyaku-list-wrap .keiyaku-list, .c-qa-box__answer-text, .c-points-list__heading, .c-points-list__info-text {
+
+  .c-hero-disease-list__text,
+  .c-plans-list__customer-price,
+  .c-plans-list__item,
+  .c-qa-box__answer-text,
+  .c-points-list__heading,
+  .c-points-list__info-text {
     font-size: calc(17 * var(--rem-ratio));
   }
-  .c-plans-list__keiyaku-detail .keiyaku-detail-box1 .heading, .c-kokuchi-answer__text {
+
+  .c-plans-list__heading,
+  .c-kokuchi-answer__text {
     font-size: calc(18 * var(--rem-ratio));
   }
-  .c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-text, .c-plans-list__keiyaku-detail .keiyaku-detail-box2 .catch, .c-plans-list__keiyaku-detail .keiyaku-detail-box2 .headline, .c-qa-box__question-text, .c-kokuchi-question__text {
+
+  .c-plans-list__data-text,
+  .c-plans-list__catch,
+  .c-plans-list__keiyaku-heading,
+  .c-qa-box__question-text,
+  .c-kokuchi-question__text {
     font-size: calc(19 * var(--rem-ratio));
   }
-  .c-plans-list__keiyaku-detail .keiyaku-detail-box2 .plandata .plandata-price {
+
+  .c-plans-list__data-price {
     font-size: calc(23 * var(--rem-ratio));
   }
-  .c-plans-list__keiyaku-detail .keiyaku-detail-box2 .catch--large {
+
+  .c-plans-list__catch--large {
     font-size: calc(35 * var(--rem-ratio));
   }
-  .c-plans-list__keiyaku-detail .keiyaku-detail-box1 .plus {
-    margin-left: calc(41 / var(--layout-width-inner)* 100%);
+
+  .c-plans-list__item-plus {
+    margin-left: calc(41 / var(--layout-width-inner) * 100%);
   }
-  .c-kokuchi-question__heading, .c-hero-disease-list__heading {
+
+  .c-kokuchi-question__heading,
+  .c-hero-disease-list__heading {
     font-size: calc(21 * var(--rem-ratio));
   }
-  .header__btn:hover, .c-freeshiryou-btn:hover, .c-kokuchi-answer__btn:hover  {
+
+  .header__btn:hover,
+  .c-freeshiryou-btn:hover,
+  .c-kokuchi-answer__btn:hover {
     scale: 1.03;
   }
+
   .c-qa-box:hover {
     cursor: pointer;
   }
+
   .c-qa-box__question:hover .c-qa-box__question-close {
     scale: 1.2;
   }
-  .footer__links-list .text-link:hover, .footer__textlink:hover {
+
+  .footer__links-list-item-text-link:hover,
+  .footer__textlink:hover {
     border-color: transparent;
   }
+
   .footer__telbtn {
     pointer-events: none;
   }
