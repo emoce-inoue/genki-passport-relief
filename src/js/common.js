@@ -1,16 +1,18 @@
 const setSlider = () => {
-  new Swiper('.swiper', {
-    loop: true,
-    speed: 600,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  if (window.Swiper) {
+    new window.Swiper('.swiper', {
+      loop: true,
+      speed: 600,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
 };
 
 const elements = document.querySelectorAll('.c-points-list__info');
@@ -87,15 +89,21 @@ const initializeKokuchiFlow = () => {
 };
 
 window.addEventListener('load', function () {
-  const mvElement = document.querySelectorAll(
-    '.section-hero__titleline-pop, .section-hero__titleline-pop-elm, .section-hero__titleline-title, .section-hero__titleline-title-flash-elm, .section-hero__titleline-title-flash-elm--1, .section-hero__titleline-title-flash-elm--2, .section-hero__titleline-title-flash-elm--3, .section-hero__titleline-title-flash-elm-img'
-  );
-  mvElement.forEach(function(element) {
+  const mvElement = document.querySelectorAll(`
+    .section-hero__titleline-pop,
+    .section-hero__titleline-pop-elm,
+    .section-hero__titleline-title,
+    .section-hero__titleline-title-flash-elm,
+    .section-hero__titleline-title-flash-elm--1,
+    .section-hero__titleline-title-flash-elm--2,
+    .section-hero__titleline-title-flash-elm--3,
+    .section-hero__titleline-title-flash-elm-img
+  `);
+  mvElement.forEach(function (element) {
     element.classList.add('loaded');
   });
   setSlider();
   triggerAnimation();
   setInterval(triggerAnimation, 5000);
   initializeKokuchiFlow();
-  // Formrun.init();
 });
