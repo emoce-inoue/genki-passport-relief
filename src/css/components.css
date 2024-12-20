@@ -283,10 +283,11 @@
   z-index: var(--front-z-index);
   position: relative;
   display: flex;
+  align-items: baseline;
   width: fit-content;
   gap: 22px;
   margin-left: min(calc(18 / var(--layout-width-sp) * 100%), 18px);
-  padding: 5px 12px;
+  padding: 6px 12px;
   background-color: var(--background-base);
   border-radius: var(--rounded-32);
   border: 3px solid var(--common-blue);
@@ -294,7 +295,7 @@
   font-weight: var(--font-bold);
   font-size: calc(14 * var(--rem-ratio));
   color: var(--common-blue);
-  line-height: var(--leading-tight);
+  line-height: var(--leading-1-1);
 }
 
 .c-points-list__info {
@@ -381,6 +382,7 @@
   font-weight: var(--font-normal);
   font-size: calc(12 * var(--rem-ratio));
   color: var(--plans-gray);
+  letter-spacing: var(--tracking-tighter);
 }
 
 .c-plans-list__headline-heading-main {
@@ -581,6 +583,7 @@
   font-feature-settings: 'palt';
   color: var(--color-grayscale-0);
   line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tightest);
 }
 
 .c-plans-list__data-text--small {
