@@ -4,8 +4,10 @@ const setSlider = () => {
       loop: true,
       speed: 600,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.js-swiper-pagination',
         clickable: true,
+        bulletClass: 'js-swiper-bullet',
+        bulletActiveClass: 'js-swiper-bullet-active',
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -38,8 +40,8 @@ const initializeKokuchiFlow = () => {
   const buttons = document.querySelectorAll('.c-kokuchi-question__button');
 
   /* eslint-disable no-unused-vars */
-  let currentStep1Answer = null;
-  let currentStep2Answer = null;
+  let currentStep1Answer;
+  let currentStep2Answer;
   /* eslint-enable no-unused-vars */
 
   const resetDisplay = () => {
@@ -90,23 +92,16 @@ const initializeKokuchiFlow = () => {
 };
 
 window.addEventListener('load', () => {
-  const mvElements = [
-    { selector: '.section-hero__title-pop', loadedClass: 'section-hero__title-pop--loaded' },
-    { selector: '.section-hero__title-pop-elm', loadedClass: 'section-hero__title-pop-elm--loaded' },
-    { selector: '.section-hero__title-main', loadedClass: 'section-hero__title-main--loaded' },
-    { selector: '.section-hero__title-main-flash--top', loadedClass: 'section-hero__title-main-flash--top--loaded' },
-    { selector: '.section-hero__title-main-flash--center', loadedClass: 'section-hero__title-main-flash--center--loaded' },
-    { selector: '.section-hero__title-main-flash--btm', loadedClass: 'section-hero__title-main-flash--btm--loaded' },
-    { selector: '.section-hero__title-main-flash-img', loadedClass: 'section-hero__titleline-title-flash-img--loaded' },
-  ];
-  
-  document.querySelectorAll(mvElements.map((item) => item.selector).join(',')).forEach((element) => {
-    const matchingItem = mvElements.find((item) => element.matches(item.selector));
-    if (matchingItem) {
-      element.classList.add(matchingItem.loadedClass);
+  const loadElms = document.querySelectorAll('.js-load');
+  loadElms.forEach((loadElm) => {
+    const classes = Array.from(loadElm.classList);
+
+    loadElm.classList.add(`${classes[0]}--loaded`);
+
+    if (classes.length >= 2) {
+      loadElm.classList.add(`${classes[1]}--loaded`);
     }
   });
-
   setSlider();
   triggerAnimation();
   setInterval(triggerAnimation, 5000);

@@ -127,7 +127,7 @@
   width: min(calc((128 / var(--layout-width-inner)) * 100%), calc(128px * 1.3));
   padding-block: 6px;
   background-color: var(--background-yellow);
-  border-radius: 12px;
+  border-radius: var(--rounded-12);
   border: 2px solid var(--common-blue);
   box-shadow: 3.56px 3.56px 0 0 rgb(0 94 164 / 100%);
   font-family: var(--font-sans);
@@ -171,7 +171,7 @@
   font-weight: var(--font-bold);
   font-size: calc(15 * var(--rem-ratio));
   color: var(--font-base);
-  line-height: calc(23 / 15);
+  line-height: var(--leading-snug);
   text-align: center;
 }
 
@@ -201,7 +201,7 @@
   font-size: calc(18 * var(--rem-ratio));
   color: var(--color-grayscale-0);
   line-height: var(--leading-tight);
-  letter-spacing: 0.1em;
+  letter-spacing: var(--tracking-loose);
 }
 
 .c-kokuchi-answer__btn-link--freeshiryou {
@@ -243,13 +243,7 @@
   width: 100%;
 }
 
-/* points */
-.l-section-points {
-  z-index: var(--default-z-index);
-  position: relative;
-  padding-block: 50px;
-}
-
+/* section heading */
 .c-section-heading {
   margin: auto;
 }
@@ -296,7 +290,7 @@
   margin-left: min(calc(18 / var(--layout-width-sp) * 100%), 18px);
   padding: 5px 12px;
   background-color: var(--background-base);
-  border-radius: 32px;
+  border-radius: var(--rounded-32);
   border: 3px solid var(--common-blue);
   font-family: var(--font-sans);
   font-weight: var(--font-bold);
@@ -475,14 +469,13 @@
 .c-plans-list__item-plus::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 0;
+  inset: 0;
   display: block;
   width: 100%;
   height: 3px;
+  margin: auto;
   background-color: var(--plans-gray);
   border-radius: var(--rounded-parts);
-  translate: 0 -50%;
 }
 
 .c-plans-list__col {
@@ -642,14 +635,13 @@
 .c-plans-list__data-plus-icon::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 0;
+  inset: 0;
   display: block;
   width: 100%;
   height: 5px;
+  margin: auto;
   background-color: var(--plans-gray);
   border-radius: var(--rounded-parts);
-  translate: 0 -50%;
 }
 
 .c-plans-list__catch {
@@ -745,15 +737,13 @@
 .c-qa-box__question-close::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 0;
+  inset: 0;
   display: block;
   width: 100%;
   height: 3px;
   margin: auto;
   background-color: var(--common-blue);
   border-radius: var(--rounded-parts);
-  translate: 0 -50%;
 }
 
 .c-qa-box__answer {

@@ -22,7 +22,7 @@
     <!-- css/js -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:wght@100..900&display=swap" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body class="body">
@@ -34,39 +34,39 @@
         <a href="#sectionShiryou" class="header__btn js-scroll-link">無料で資料請求</a>
       </header>
       <section class="l-section-hero">
-        <div class="section-hero__inner">
-          <div class="section-hero__content">
-            <div class="section-hero__title">
-              <p class="section-hero__title-pop js-load">
-                <span class="section-hero__title-pop-elm"><img class="section-hero__title-pop-img" src="images/hero-pop.svg" alt="持病があっても入りやすい" width="238" height="69"/></span>
+        <div class="l-section-hero__inner">
+          <div class="l-section-hero__content">
+            <div class="l-section-hero__title">
+              <p class="l-section-hero__title-pop js-load">
+                <span class="l-section-hero__title-pop-elm js-load"><img class="l-section-hero__title-pop-img" src="images/hero-pop.svg" alt="持病があっても入りやすい" width="238" height="69"/></span>
               </p>
-              <h1 class="section-hero__title-main">
-                <span class="section-hero__title-main-word">
+              <h1 class="l-section-hero__title-main js-load">
+                <span class="l-section-hero__title-main-word">
                   <picture>
                     <source srcset="images/webp/hero-title.webp" width="715" height="176" type="image/webp" />
                     <img src="images/hero-title.png" alt="告知はたった2つだけ" width="715" height="176" />
                   </picture>
                 </span>
-                <span class="section-hero__title-main-flash section-hero__title-main-flash--top">
-                  <img class="section-hero__title-main-flash-img" src="images/hero-flash1.svg" alt="強調のイラスト1" width="15" height="26" />
+                <span class="l-section-hero__title-main-flash l-section-hero__title-main-flash--top js-load">
+                  <img class="l-section-hero__title-main-flash-img js-load" src="images/hero-flash1.svg" alt="強調のイラスト1" width="15" height="26" />
                 </span>
-                <span class="section-hero__title-main-flash section-hero__title-main-flash--center">
-                  <img class="section-hero__title-main-flash-img" src="images/hero-flash2.svg" alt="強調のイラスト2" width="29" height="26" />
+                <span class="l-section-hero__title-main-flash l-section-hero__title-main-flash--center js-load">
+                  <img class="l-section-hero__title-main-flash-img js-load" src="images/hero-flash2.svg" alt="強調のイラスト2" width="29" height="26" />
                 </span>
-                <span class="section-hero__title-main-flash section-hero__title-main-flash--btm">
-                  <img class="section-hero__title-main-flash-img" src="images/hero-flash3.svg" alt="強調のイラスト3" width="24" height="14" />
+                <span class="l-section-hero__title-main-flash l-section-hero__title-main-flash--bottom js-load">
+                  <img class="l-section-hero__title-main-flash-img js-load" src="images/hero-flash3.svg" alt="強調のイラスト3" width="24" height="14" />
                 </span>
               </h1>
             </div>
-            <div class="section-hero__image">
+            <div class="l-section-hero__image">
               <picture>
                 <source srcset="images/webp/hero-img.webp" width="706" height="735" type="image/webp" />
                 <img src="images/hero-img.png" alt="平愛梨さんの画像" width="706" height="735" />
               </picture>
             </div>
-            <div class="section-hero__disease js-scrollin">
-              <p class="section-hero__disease-heading"><img class="section-hero__disease-heading-img" src="images/hero-head.svg" alt="こんな方でもお申し込みOK！" width="200" height="16" /></p>
-              <ul class="hero-disease-list__wrapper">
+            <div class="l-section-hero__disease js-scrollin">
+              <p class="l-section-hero__disease-heading"><img class="l-section-hero__disease-heading-img" src="images/hero-head.svg" alt="こんな方でもお申し込みOK！" width="200" height="16" /></p>
+              <ul class="l-section-hero__disease-list-wrapper">
                 <li class="c-hero-disease-list">
                   <p class="c-hero-disease-list__heading">ガン</p>
                   <p class="c-hero-disease-list__text">経験がある</p>
@@ -85,7 +85,7 @@
         </div>
       </section>
       <section class="l-section-topmessage js-scrollin">
-        <div class="section-topmessage__logo">
+        <div class="l-section-topmessage__logo">
           <picture>
             <source srcset="images/webp/passport-logo.webp" width="492" height="106" type="image/webp" />
             <img src="images/passport-logo.png" alt="持病があっても入りやすい 元気パスポートワイド" width="246" height="53" loading="lazy" />
@@ -103,11 +103,11 @@
         </a>
       </section>
       <section class="l-section-kokuchi">
-        <div class="section-kokuchi__heading-wrapper js-scrollin">
+        <div class="l-section-kokuchi__heading-wrapper js-scrollin">
           <p class="c-section-heading c-section-heading--kokuchi"><img class="c-section-heading-img" src="images/kokuchi-head.svg" alt="告知項目" width="218" height="60" loading="lazy" /></p>
-          <p class="section-kokuchi__pop"><img class="section-kokuchi__pop-img" src="images/kokuchi-head-pop.svg" alt="まずはチェック" width="56" height="54" loading="lazy" /></p>
+          <p class="l-section-kokuchi__pop"><img class="l-section-kokuchi__pop-img" src="images/kokuchi-head-pop.svg" alt="まずはチェック" width="56" height="54" loading="lazy" /></p>
         </div>
-        <div class="section-kokuchi__qa js-scrollin">
+        <div class="l-section-kokuchi__qa js-scrollin">
           <div class="c-kokuchi-question">
             <p class="c-kokuchi-question__heading">告知1</p>
             <p class="c-kokuchi-question__text">最近3か月以内に、医師・歯科医師から入院・手術・放射線治療のいずれかを進められたことはありますか。</p>
@@ -163,12 +163,12 @@
             </div>
           </div>
         </div>
-        <p class="section-kokuchi__attention">※ここで回答いただいても、告知いただいたことにはなりません。お申し込み時に改めて体況を告知にてご申告ください。</p>
+        <p class="l-section-kokuchi__attention">※ここで回答いただいても、告知いただいたことにはなりません。お申し込み時に改めて体況を告知にてご申告ください。</p>
       </section>
       <section class="l-section-points">
         <p class="c-section-heading c-section-heading--point js-scrollin"><img class="c-section-heading-img" src="images/point-head.svg" alt="3つのポイント" width="247" height="51" loading="lazy" /></p>
-        <div class="section-points__inner">
-          <ul class="section-points__list-wrapper">
+        <div class="l-section-points__inner">
+          <ul class="l-section-points__list-wrapper">
             <li class="c-points-list js-scrollin">
               <div class="c-points-list__heading">
                 <p class="c-points-list__heading-word c-points-list__heading-word--left">ポイント1</p>
@@ -225,7 +225,7 @@
               </div>
             </li>
           </ul>
-          <p class="section-points__attention js-scrollin">
+          <p class="l-section-points__attention js-scrollin">
             ＊1 ご契約から一定期間、給付金額を削減してお支払いする期間<br />
             ＊2 健康状態によっては一時金20万まで案内可能な場合があります。
           </p>
@@ -233,7 +233,7 @@
       </section>
       <section class="l-section-plans">
         <p class="c-section-heading c-section-heading--plans js-scrollin"><img class="c-section-heading-img" src="images/plan-head.svg" alt="プラン例" width="222" height="60" loading="lazy" /></p>
-        <div class="section-plans__list-wrapper js-scrollin">
+        <div class="l-section-plans__list-wrapper js-scrollin">
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -448,23 +448,23 @@
             </div>
             <div class="swiper-parts-wrapper">
               <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
+              <div class="js-swiper-pagination"></div>
               <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
       </section>
       <section class="l-section-bottom-message">
-        <div class="section-bottom-message__heading js-scrollin">
-          <div class="section-bottom-message__heading-bg">
+        <div class="l-section-bottom-message__heading js-scrollin">
+          <div class="l-section-bottom-message__heading-bg">
             <picture>
               <source srcset="images/webp/shiryou-message-bg.webp" width="638" height="306" type="image/webp" />
               <img src="images/shiryou-message-bg.png" alt="持病があるからこそしっかり保険を備えよう！の背景" width="638" height="306" loading="lazy" />
             </picture>
           </div>
-          <p class="section-bottom-message__heading-text"><img class="section-bottom-message__heading-text-img" src="images/free-shiryou-pop.svg" alt="持病があるからこそしっかり保険を備えよう！" width="223" height="45" loading="lazy" /></p>
+          <p class="l-section-bottom-message__heading-text"><img class="l-section-bottom-message__heading-text-img" src="images/free-shiryou-pop.svg" alt="持病があるからこそしっかり保険を備えよう！" width="223" height="45" loading="lazy" /></p>
         </div>
-        <div class="section-bottom-message__image js-scrollin">
+        <div class="l-section-bottom-message__image js-scrollin">
           <picture>
             <source srcset="images/webp/shiryou-message-img.webp" width="408" height="372" type="image/webp" />
             <img src="images/shiryou-message-img.png" alt="平愛梨さんの画像" width="408" height="372" loading="lazy" />
@@ -535,17 +535,17 @@
       </section>
       <section id="sectionShiryou" class="l-section-shiryou js-anchor-link">
         <p class="c-section-heading c-section-heading--shiryou js-scrollin"><img class="c-section-heading-img" src="images/shiryou-head.svg" alt="資料請求" width="222" height="63" loading="lazy" /></p>
-        <div class="section-shiryou__form js-scrollin">
+        <div class="l-section-shiryou__form js-scrollin">
           <div class="formrun-embed" data-formrun-form="@project-planning-metOPqLSrdpNjtyCY3Lw" data-formrun-redirect="true"> </div>
         </div>
       </section>
       <footer class="footer">
         <div class="footer__inner">
-          <a href="tel:0120-907-037" class="footer__telbtn js-scroll-link">
-            <div class="footer__telbtn-icon"><img src="images/phone-icon.svg" alt="電話のアイコン" width="34" height="43" loading="lazy" /></div>
-            <div class="footer__telbtn-info">
-              <p class="footer__telbtn-info-num">0120-907-037</p>
-              <p class="footer__telbtn-info-time">営業時間10:00〜20:00</p>
+          <a href="tel:0120-907-037" class="footer__tel-button js-scroll-link">
+            <div class="footer__tel-button-icon"><img src="images/phone-icon.svg" alt="電話のアイコン" width="34" height="43" loading="lazy" /></div>
+            <div class="footer__tel-button-info">
+              <p class="footer__tel-button-info-num">0120-907-037</p>
+              <p class="footer__tel-button-info-time">営業時間10:00〜20:00</p>
             </div>
           </a>
           <div class="footer__textarea">
