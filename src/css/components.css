@@ -217,14 +217,12 @@
 .c-kokuchi-answer__btn-link::before {
   content: '';
   position: absolute;
-  top: 50%;
-  right: min(calc((17 / var(--layout-width-sp)) * 100vw), 17px);
+  inset-inline-end: min(calc((17 / var(--layout-width-sp)) * 100vw), 17px);
   width: 0;
   height: 0;
   border-style: solid;
   border-color: transparent transparent transparent var(--color-grayscale-0);
   border-width: 6px 0 6px 10.39px;
-  translate: 0 -50%;
 }
 
 .c-kokokuchi-answer__btn {
