@@ -22,7 +22,7 @@
 
 .c-hero-disease-list__text {
   margin-top: 10px;
-  font-family: var(--font-sans-display);
+  font-family: var(--font-sans);
   font-size: calc(14 * var(--rem-ratio));
   color: var(--common-blue);
   text-align: center;
@@ -317,7 +317,7 @@
 
 .c-points-list__info-text {
   flex: 1;
-  font-family: var(--font-sans-display);
+  font-family: var(--font-sans);
   font-size: calc(14 * var(--rem-ratio));
   font-weight: var(--font-normal);
   color: var(--color-grayscale-0);
@@ -377,14 +377,14 @@
 }
 
 .c-plans-list__headline-heading-sub {
-  font-family: var(--font-sans-display);
+  font-family: var(--font-sans);
   font-weight: var(--font-normal);
   font-size: calc(12 * var(--rem-ratio));
   color: var(--plans-gray);
 }
 
 .c-plans-list__headline-heading-main {
-  font-family: var(--font-sans-display);
+  font-family: var(--font-sans);
   font-weight: var(--font-bold);
   font-size: calc(22 * var(--rem-ratio));
   letter-spacing: 0.2em;
@@ -420,7 +420,7 @@
 }
 
 .c-plans-list__customer-term {
-  font-family: var(--font-sans-display);
+  font-family: var(--font-sans);
   font-weight: var(--font-normal);
   font-size: calc(12 * var(--rem-ratio));
   letter-spacing: var(--tracking-tighter);
@@ -432,7 +432,7 @@
   justify-content: center;
   align-items: center;
   width: min(calc(58 / var(--layout-width-inner) * 100%), 87px);
-  font-family: var(--font-sans-display);
+  font-family: var(--font-sans);
   font-weight: var(--font-normal);
   font-size: calc(15 * var(--rem-ratio));
   color: var(--color-grayscale-0);
@@ -754,7 +754,7 @@
 
 .c-qa-box__answer-text {
   width: 75%;
-  font-family: var(--font-sans-display);
+  font-family: var(--font-sans);
   font-weight: var(--font-normal);
   font-size: calc(14 * var(--rem-ratio));
   line-height: var(--leading-tight);
