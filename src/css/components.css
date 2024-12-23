@@ -453,7 +453,7 @@
   width: min(calc(10 / var(--layout-width-inner) * 100%), 15px);
   aspect-ratio: 1/1;
   margin: 10px 0;
-  margin-left: calc(47 / var(--layout-width-inner) * 100%);
+  margin-left: calc(45 / var(--layout-width-inner) * 100%);
 }
 
 .c-plans-list__item-plus::before {
@@ -829,7 +829,7 @@
   }
 
   .c-plans-list__item-plus {
-    margin-left: calc(41 / var(--layout-width-inner) * 100%);
+    margin-left: calc(40 / var(--layout-width-inner) * 100%);
   }
 
   .c-kokuchi-question__heading,
@@ -870,6 +870,3 @@
     scale: 1.2;
   }
 }
-
-
-

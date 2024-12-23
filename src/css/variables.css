@@ -16,10 +16,11 @@
   --leading-normal: 1.7;
   --leading-relaxed: 1.8;
   --leading-loose: 2;
-  --tracking-tightest: -0.005em; 
-  --tracking-tighter: -0.01em; 
+  --tracking-tightest: -0.005em;
+  --tracking-tighter: -0.01em;
   --tracking-negative-tight: -0.02em;
   --tracking-tight: 0.02em;
+  --tracking-tigher: 0.03em;
   --tracking-normal: 0.05em;
   --tracking-medium: 0.07em;
   --tracking-loose: 0.1em;

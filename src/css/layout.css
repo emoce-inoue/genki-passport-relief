@@ -93,7 +93,9 @@
   margin-top: 0;
   margin-left: calc(14 / var(--layout-width-sp) * 100%);
   scale: 1;
-  transition: margin 0.9s cubic-bezier(0.65, 0.05, 0.36, 1), scale 0.9s 0.9s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition:
+    margin 0.9s cubic-bezier(0.65, 0.05, 0.36, 1),
+    scale 0.9s 0.9s cubic-bezier(0.65, 0.05, 0.36, 1);
   transition-delay: 1.2s;
 }
 
@@ -510,7 +512,7 @@
   margin-top: 18px;
 }
 
-.footer__links-list-item-text-link{
+.footer__links-list-item-text-link {
   display: inline-block;
   border-bottom: 1px solid var(--color-grayscale-0);
   transition: border-bottom 0.2s ease;
