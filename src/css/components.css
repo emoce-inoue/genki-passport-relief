@@ -282,20 +282,12 @@
 .c-points-list__heading {
   z-index: var(--front-z-index);
   position: relative;
-  display: flex;
-  align-items: baseline;
-  width: fit-content;
-  gap: 22px;
-  margin-left: min(calc(18 / var(--layout-width-sp) * 100%), 18px);
-  padding: 6px 12px;
-  background-color: var(--background-base);
-  border-radius: var(--rounded-32);
-  border: 3px solid var(--common-blue);
-  font-family: var(--font-sans);
-  font-weight: var(--font-bold);
-  font-size: calc(14 * var(--rem-ratio));
-  color: var(--common-blue);
-  line-height: var(--leading-1-1);
+  width: min(calc(264/var(--layout-width-inner)*100%), calc(258px * 1.3));
+  margin-left: min(calc(18 / var(--layout-width-inner) * 100%), 18px);
+}
+
+.c-points-list__heading-img {
+  width: 100%;
 }
 
 .c-points-list__info {
@@ -304,7 +296,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: min(calc((14 / 360) * 100%), 14px);
+  gap: min(calc((14 / var(--layout-width-inner)) * 100%), 14px);
   margin-top: -16px;
   padding: 35px 20px 24px;
   border-radius: var(--rounded-frame-s);
@@ -323,7 +315,7 @@
   font-weight: var(--font-normal);
   color: var(--color-grayscale-0);
   line-height: var(--leading-1-4);
-  text-align: justify;
+  letter-spacing: var(--tracking-tightest);
 }
 
 .c-points-list__info-text--yellow {
@@ -802,7 +794,6 @@
   .c-plans-list__customer-price,
   .c-plans-list__item,
   .c-qa-box__answer-text,
-  .c-points-list__heading,
   .c-points-list__info-text {
     font-size: calc(17 * var(--rem-ratio));
   }
@@ -847,6 +838,12 @@
 @media screen and (min-width: 585px) {
   .c-freeshiryou-button__link {
     margin-top: -27px;
+  }
+}
+
+@media screen and (min-width: 496px) {
+  .c-points-list__info {
+    margin-top: -22px;
   }
 }
 
