@@ -29,10 +29,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="style.css" rel="stylesheet"></head>
   <body class="body">
-    <div class="wrapper">
+    <div class="wrapper js-load">
       <header class="header">
         <div class="header__logo">
-          <img class="header__logo-img" src="images/logo.svg" alt="イオン・アリアンツ生命" width="152" height="13" />
+          <a href="https://www.financial-agency.com/service/genki-passport-relief/" class="header__logo-link"><img class="header__logo-img" src="images/logo.svg" alt="イオン・アリアンツ生命" width="152" height="13" /></a>
         </div>
         <a href="#sectionShiryou" class="header__btn js-scroll-link">無料で資料請求</a>
       </header>
@@ -68,22 +68,24 @@
             </div>
             <div class="l-section-hero__image">
               <picture>
-                <source srcset="images/webp/hero-img.webp" width="706" height="735" type="image/webp" />
-                <img src="images/hero-img.png" alt="平愛梨さんの画像" width="706" height="735" />
+                <source srcset="images/webp/hero-img-pc.webp" media="(min-width: 768px)" type="image/webp" class="no-sp" width="706" height="735" />
+                <source srcset="images/webp/hero-img.webp" media="(max-width: 767px)" type="image/webp" class="no-pc" width="706" height="735" />
+                <img src="images/hero-img-pc.png" alt="平愛梨さんの画像" width="706" height="735" class="no-sp" />
+                <img src="images/hero-img.png" alt="平愛梨さんの画像" width="706" height="735" class="no-pc" />
               </picture>
             </div>
-            <div class="l-section-hero__disease js-scrollin">
-              <p class="l-section-hero__disease-heading"><img class="l-section-hero__disease-heading-img" src="images/hero-head.svg" alt="こんな方でもお申し込みOK！" width="200" height="16" /></p>
+            <div class="l-section-hero__disease">
+              <p class="l-section-hero__disease-heading js-load"><img class="l-section-hero__disease-heading-img" src="images/hero-head.svg" alt="こんな方でもお申し込みOK！" width="200" height="16" /></p>
               <ul class="l-section-hero__disease-list-wrapper">
-                <li class="c-hero-disease-list">
+                <li class="c-hero-disease-list c-hero-disease-list--list1 js-load">
                   <p class="c-hero-disease-list__heading">ガン</p>
                   <p class="c-hero-disease-list__text">経験がある</p>
                 </li>
-                <li class="c-hero-disease-list">
+                <li class="c-hero-disease-list c-hero-disease-list--list2 js-load">
                   <p class="c-hero-disease-list__heading">脳・心臓</p>
                   <p class="c-hero-disease-list__text">病歴がある</p>
                 </li>
-                <li class="c-hero-disease-list c-hero-disease-list--small">
+                <li class="c-hero-disease-list c-hero-disease-list--list3 c-hero-disease-list--small js-load">
                   <p class="c-hero-disease-list__heading">糖尿病</p>
                   <p class="c-hero-disease-list__text">持病がある</p>
                 </li>
@@ -197,7 +199,7 @@
           <ul class="l-section-points__list-wrapper">
             <li class="c-points-list js-scrollin">
               <p class="c-points-list__heading">
-                <img class="c-points-list__heading-img" src="images/point-title1.svg" alt="ポイント1" width="264" height="36" loading="lazy">
+                <img class="c-points-list__heading-img" src="images/point-title1.svg" alt="ポイント1" width="264" height="36" loading="lazy" />
               </p>
               <div class="c-points-list__info">
                 <div class="c-points-list__info-icon">
@@ -214,7 +216,7 @@
             </li>
             <li class="c-points-list js-scrollin">
               <p class="c-points-list__heading">
-                <img class="c-points-list__heading-img" src="images/point-title2.svg" alt="ポイント2" width="264" height="37" loading="lazy">
+                <img class="c-points-list__heading-img" src="images/point-title2.svg" alt="ポイント2" width="264" height="37" loading="lazy" />
               </p>
               <div class="c-points-list__info">
                 <div class="c-points-list__info-icon">
@@ -231,7 +233,7 @@
             </li>
             <li class="c-points-list js-scrollin">
               <p class="c-points-list__heading">
-                <img class="c-points-list__heading-img" src="images/point-title3.svg" alt="ポイント3" width="264" height="36" loading="lazy">
+                <img class="c-points-list__heading-img" src="images/point-title3.svg" alt="ポイント3" width="264" height="36" loading="lazy" />
               </p>
               <div class="c-points-list__info">
                 <div class="c-points-list__info-icon">
@@ -241,17 +243,14 @@
                   </picture>
                 </div>
                 <p class="c-points-list__info-text">
-                  一時金が<span class="c-points-list__info-text c-points-list__info-text--yellow">最大10万円！</span>*2<br />
+                  一時金が<span class="c-points-list__info-text c-points-list__info-text--yellow">最大10万円！</span>*1<br />
                   日帰り入院から受け取れるから短い入院の時でも安心！<br />
                   <span class="c-points-list__info-text c-points-list__info-text--attention">※一時金は1万円単位で選択が可能</span>
                 </p>
               </div>
             </li>
           </ul>
-          <p class="l-section-points__attention js-scrollin">
-            ＊1 ご契約から一定期間、給付金額を削減してお支払いする期間<br />
-            ＊2 健康状態によっては一時金20万まで案内可能な場合があります。
-          </p>
+          <p class="l-section-points__attention js-scrollin"> ＊1 健康状態によっては一時金20万まで案内可能な場合があります。 </p>
         </div>
       </section>
       <section class="l-section-plans">
@@ -582,7 +581,7 @@
       </section>
       <footer class="footer">
         <div class="footer__inner">
-          <a href="tel:0120-907-037" class="footer__tel-button js-scroll-link">
+          <a href="tel:0120-907-037" class="footer__tel-button">
             <div class="footer__tel-button-icon"><img src="images/phone-icon.svg" alt="電話のアイコン" width="34" height="43" loading="lazy" /></div>
             <div class="footer__tel-button-info">
               <p class="footer__tel-button-info-num">0120-907-037</p>
