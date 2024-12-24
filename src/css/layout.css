@@ -1,6 +1,12 @@
 /* layout */
 .wrapper {
   overflow: hidden;
+  opacity: 0;
+}
+
+.wrapper--loaded {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 /* header */
@@ -67,7 +73,7 @@
 
 .l-section-hero__content {
   position: relative;
-  width: min(100%, 720px);
+  width: min(100%, 1350px);
   margin: auto;
 }
 
@@ -76,7 +82,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: min(100%, 640px);
   margin-top: calc(30 / var(--layout-width-sp) * 100%);
 }
 
@@ -119,7 +125,7 @@
 
 .l-section-hero__title-main {
   position: relative;
-  margin-top: calc(-36 / var(--layout-width-sp) * 100%);
+  margin-top: calc(-40 / var(--layout-width-sp) * 100%);
   opacity: 0;
   scale: 0.7;
 }
@@ -135,7 +141,7 @@
 
 .l-section-hero__title-main-word {
   display: block;
-  width: calc(354 / var(--layout-width-sp) * 100%);
+  width: min(calc(354 / var(--layout-width-sp) * 100%), 620px);
   margin: auto;
 }
 
@@ -187,7 +193,7 @@
   z-index: var(--default-z-index);
   position: relative;
   width: calc(317 / var(--layout-width-sp) * 100%);
-  margin-left: min(calc(44 / var(--layout-width-sp) * 100%));
+  margin-left: calc(44 / var(--layout-width-sp) * 100%);
   padding-top: calc(140 / var(--layout-width-sp) * 100%);
 }
 
@@ -209,6 +215,12 @@
 .l-section-hero__disease-heading {
   width: calc(202 / var(--layout-width-inner) * 100%);
   margin: auto;
+  clip-path: inset(0 100% 0 0);
+}
+
+.l-section-hero__disease-heading--loaded {
+  clip-path: inset(0);
+  transition: clip-path 1s ease-out 2.3s;
 }
 
 .l-section-hero__disease-heading::after {
@@ -219,8 +231,6 @@
   margin-top: 4px;
   background-color: var(--common-blue);
   border-radius: var(--rounded-heading);
-  transform: scaleX(0);
-  transform-origin: left center;
 }
 
 .l-section-hero__disease-heading-img {
@@ -447,8 +457,8 @@
 .footer {
   z-index: var(--default-z-index);
   position: relative;
-  padding-bottom: 137px;
-  margin-top: 118px;
+  padding-bottom: 10px;
+  margin-top: 50px;
 }
 
 .footer__inner {
@@ -556,6 +566,52 @@
 @media screen and (min-width: 768px) {
   .l-section-hero {
     padding-bottom: 47px;
+  }
+
+  .l-section-hero__title {
+    left: 50%;
+    width: calc(630 / var(--layout-width-max) * 100%);
+    margin-top: calc(25 / var(--layout-width-max) * 100%);
+    translate: -50%;
+  }
+
+  .l-section-hero__title-pop {
+    width: calc((400 / 630) * 100%);
+    margin-left: 17%;
+  }
+
+  .l-section-hero__title-pop--loaded {
+    margin-left: 0;
+  }
+
+  .l-section-hero__title-main-word {
+    width: 100%;
+  }
+
+  .l-section-hero__title-main-flash--top {
+    right: calc((73 / 630) * 100%);
+    margin-top: calc((26 / 630) * 100%);
+  }
+
+  .l-section-hero__title-main-flash--center {
+    right: calc((39 / 630) * 100%);
+    margin-top: calc((32 / 630) * 100%);
+  }
+
+  .l-section-hero__title-main-flash--bottom {
+    right: calc((38 / 630) * 100%);
+    margin-top: calc((63 / 630) * 100%);
+  }
+
+  .l-section-hero__image {
+    width: calc(505 / var(--layout-width-max) * 100%);
+    margin: auto;
+    padding-top: calc(211 / var(--layout-width-max) * 100%);
+  }
+
+  .l-section-hero__disease {
+    width: calc(630 / var(--layout-width-max) * 100%);
+    margin-bottom: calc(-15 / var(--layout-width-max) * 100%);
   }
 
   .l-section-kokuchi__attention,
