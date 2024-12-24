@@ -96,9 +96,11 @@ window.addEventListener('load', () => {
   loadElms.forEach((loadElm) => {
     const classes = Array.from(loadElm.classList);
 
-    loadElm.classList.add(`${classes[0]}--loaded`);
+    if (classes[0] !== 'js-load') {
+      loadElm.classList.add(`${classes[0]}--loaded`);
+    }
 
-    if (classes.length >= 2) {
+    if (classes.length >= 2 && classes[1] !== 'js-load') {
       loadElm.classList.add(`${classes[1]}--loaded`);
     }
   });
