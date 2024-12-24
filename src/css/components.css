@@ -347,6 +347,10 @@
   font-size: calc(12 * var(--rem-ratio));
 }
 
+.c-points-list__info-num {
+  vertical-align: text-top;
+}
+
 /* plans */
 .c-plans-list {
   width: min(calc(var(--layout-width-inner) / var(--layout-width-sp) * 100%), 768px);
