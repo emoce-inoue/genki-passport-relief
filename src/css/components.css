@@ -43,7 +43,7 @@
   align-items: center;
   inline-size: 100%;
   margin: auto;
-  padding: 13px calc((53/655)*100%);
+  padding: 13px calc((53 / 655) * 100%);
   background-color: var(--shiryou-btn);
   border: 2.5px solid var(--background-base);
   border-radius: var(--rounded-l);
@@ -96,7 +96,7 @@
   margin: 12px auto 0;
   font-family: var(--font-sans);
   font-weight: var(--font-normal);
-  font-size: calc(15*var(--rem-ratio));
+  font-size: calc(15 * var(--rem-ratio));
   letter-spacing: var(--tracking-negative-tight);
   color: var(--font-base);
   text-align: justify;
@@ -146,19 +146,19 @@
 }
 
 .c-kokuchi-answer__arrow {
-  inline-size: calc(232/var(--layout-width-inner)*100%);
+  inline-size: calc(232 / var(--layout-width-inner) * 100%);
   margin: auto;
 }
 
 .c-kokuchi-answer__button-box {
-  inline-size: calc(643/var(--layout-width-inner)*100%);
-  margin: calc(44px/2) auto 0;
+  inline-size: calc(643 / var(--layout-width-inner) * 100%);
+  margin: calc(44px / 2) auto 0;
   border-radius: var(--rounded-12);
   box-shadow: var(--shadow-kokuchi-freeshiryou-btn-base);
 }
 
 .c-kokuchi-answert__button-box-inner {
-  padding-block: calc(40px/2) calc(30px/2);
+  padding-block: calc(40px / 2) calc(30px / 2);
   box-shadow: var(--shadow-kokuchi-freeshiryou-btn-cover);
   border-radius: var(--rounded-12);
   border: 4px solid var(--shiryou-btn);
@@ -176,7 +176,7 @@
 
 .c-kokuchi-answer__text--freeshiryou {
   margin: 0;
-  font-size: calc(21*var(--rem-ratio));
+  font-size: calc(21 * var(--rem-ratio));
   color: var(--shiryou-btn);
 }
 
@@ -191,7 +191,7 @@
 .c-kokuchi-answer__button--free-shiryou {
   z-index: var(--default-z-index);
   inline-size: calc((523 / 643) * 100%);
-  margin-block-start: calc(19px/2);
+  margin-block-start: calc(19px / 2);
 }
 
 .c-kokuchi-answer__button-link {
@@ -229,8 +229,8 @@
 .c-kokuchi-answer__button-arrow {
   position: absolute;
   inset-block-start: 50%;
-  inset-inline-end: calc((42/486)*100%);
-  inline-size: calc((17/486)*100%);
+  inset-inline-end: calc((42 / 486) * 100%);
+  inline-size: calc((17 / 486) * 100%);
   translate: 0 -50%;
 }
 
@@ -254,7 +254,7 @@
 .c-section-heading--kokuchi {
   z-index: var(--default-z-index);
   position: relative;
-  inline-size: calc(403/var(--layout-width-sp)*100%);
+  inline-size: calc(403 / var(--layout-width-sp) * 100%);
   margin: auto;
 }
 
@@ -305,7 +305,7 @@
   justify-content: space-between;
   gap: calc((23 / var(--layout-width-inner)) * 100%);
   margin-block-start: -16px;
-  padding: 35px calc(32/var(--layout-width-inner)*100%) 24px;
+  padding: 35px calc(32 / var(--layout-width-inner) * 100%) 24px;
   border-radius: var(--rounded-frame-s);
   background: linear-gradient(-45deg, var(--common-blue) 50%, var(--shine) 60%, var(--common-blue) 70%);
   background-size: 600% 100%;
@@ -504,10 +504,10 @@
 
 .c-plans-list__keiyaku-heading {
   position: relative;
-  inline-size:calc(644 / var(--layout-width-inner) * 100%);
+  inline-size: calc(644 / var(--layout-width-inner) * 100%);
   padding: 4px 0 4px 13px;
   background-color: var(--common-yellow);
-  font-size: calc(15*var(--rem-ratio));
+  font-size: calc(15 * var(--rem-ratio));
   font-family: var(--font-sans);
   font-weight: var(--font-semibold);
   line-height: var(--leading-tight);
@@ -562,7 +562,7 @@
 }
 
 .c-plans-list__data-text {
-  font-size: calc(15*var(--rem-ratio));
+  font-size: calc(15 * var(--rem-ratio));
   font-family: var(--font-sans-display);
   font-weight: var(--font-normal);
   font-feature-settings: 'palt';
@@ -600,24 +600,24 @@
   position: relative;
   inline-size: calc(21 / var(--layout-width-inner) * 100%);
   aspect-ratio: 1/1;
-  margin: 5px 0 5px calc(94/var(--layout-width-inner)*100%);
+  margin: 5px 0 5px calc(94 / var(--layout-width-inner) * 100%);
 }
 
 .c-plans-list__data-plus-icon {
-  inline-size: calc(43/var(--layout-width-inner)*100%);
-  margin-inline: calc(20/var(--layout-width-sp)*100%);
+  inline-size: calc(43 / var(--layout-width-inner) * 100%);
+  margin-inline: calc(20 / var(--layout-width-sp) * 100%);
 }
 
 .c-plans-list__data-plus-icon--small {
-  inline-size: calc(30/var(--layout-width-inner)*100%);
-  margin-inline: calc(5/var(--layout-width-inner)*100%);
+  inline-size: calc(30 / var(--layout-width-inner) * 100%);
+  margin-inline: calc(5 / var(--layout-width-inner) * 100%);
 }
 
 .c-plans-list__catch {
   margin-block-start: 5px;
   font-family: var(--font-sans);
   font-weight: var(--font-bold);
-  font-size: calc(15*var(--rem-ratio));
+  font-size: calc(15 * var(--rem-ratio));
   color: var(--plans-gray);
   text-align: center;
   line-height: var(--leading-tight);
@@ -681,16 +681,16 @@
   inline-size: 75%;
   font-family: var(--font-sans);
   font-weight: var(--font-semibold);
-  font-size: calc(15*var(--rem-ratio));
+  font-size: calc(15 * var(--rem-ratio));
   line-height: var(--leading-tight);
 }
 
 .c-qa-box__question-close {
   position: absolute;
   inset-block-start: 0;
-  inset-inline-end: calc(21/var(--layout-width-inner)*100%);
+  inset-inline-end: calc(21 / var(--layout-width-inner) * 100%);
   inline-size: min(calc(30 / var(--layout-width-inner) * 100%), 16px);
-  margin-block-start: calc(15/var(--layout-width-inner)*100%);
+  margin-block-start: calc(15 / var(--layout-width-inner) * 100%);
   transition: rotate 0.3s ease;
 }
 
@@ -750,42 +750,42 @@
 @media screen and (min-width: 768px) {
   /* freeshiryou */
   .c-freeshiryou-button {
-    inline-size: calc(505/var(--layout-width-max)*100%);
+    inline-size: calc(505 / var(--layout-width-max) * 100%);
   }
 
   .c-freeshiryou-button__icon {
-    inline-size: calc((37/505)*100%);
+    inline-size: calc((37 / 505) * 100%);
   }
 
   .c-freeshiryou-button__text {
-    font-size: calc(26/var(--layout-width-max)*100vw);
+    font-size: calc(26 / var(--layout-width-max) * 100vw);
   }
 
   .c-freeshiryou-button__link {
-    padding: calc((20/505)*100%) calc((28/505)*100%);
+    padding: calc((20 / 505) * 100%) calc((28 / 505) * 100%);
     border-radius: var(--rounded-45);
   }
 
   .c-freeshiryou-button__arrow {
-    inline-size: calc((15/505)*100%);
+    inline-size: calc((15 / 505) * 100%);
   }
 
   /* hero */
   .c-hero-disease-list__heading {
-    font-size: calc(28/var(--layout-width-max)*100vw);
+    font-size: calc(28 / var(--layout-width-max) * 100vw);
   }
 
   .c-hero-disease-list__text {
-    font-size: calc(22/var(--layout-width-max)*100vw);
+    font-size: calc(22 / var(--layout-width-max) * 100vw);
   }
 
   /* point */
   .c-section-heading--point {
-    inline-size: min(calc(475/var(--layout-width-max)*100%), 365px);
+    inline-size: min(calc(475 / var(--layout-width-max) * 100%), 365px);
   }
 
   .c-points-list {
-    inline-size: calc((320/1000)*100%);
+    inline-size: calc((320 / 1000) * 100%);
   }
 
   .c-points-list + * {
@@ -793,30 +793,30 @@
   }
 
   .c-points-list__heading {
-    inline-size: calc((298/320)*100%);
+    inline-size: calc((298 / 320) * 100%);
     margin: auto;
   }
 
   .c-points-list__info {
     display: block;
-    margin-block-start: calc((-40/320)*100%);
+    margin-block-start: calc((-40 / 320) * 100%);
     padding: 0;
-    padding-block: calc((48/320)*100%) calc((38/320)*100%);
+    padding-block: calc((48 / 320) * 100%) calc((38 / 320) * 100%);
   }
 
   .c-points-list__info-icon {
-    inline-size: calc((132/320)*100%);
+    inline-size: calc((132 / 320) * 100%);
     margin: auto;
   }
 
   .c-points-list__info-text {
-    margin-block-start: calc((19/320)*100%);
-    padding-inline: calc((18/320)*100%);
-    font-size: min((18/var(--layout-width-max)*100vw), calc(13*var(--rem-ratio)));
+    margin-block-start: calc((19 / 320) * 100%);
+    padding-inline: calc((18 / 320) * 100%);
+    font-size: min((18 / var(--layout-width-max) * 100vw), calc(13 * var(--rem-ratio)));
   }
 
   .c-points-list__info-text--attention {
-    font-size: min(calc(18/var(--layout-width-max)*100vw), calc(13*var(--rem-ratio)));
+    font-size: min(calc(18 / var(--layout-width-max) * 100vw), calc(13 * var(--rem-ratio)));
   }
 
   /* kokuchi */
@@ -825,61 +825,61 @@
   }
 
   .c-kokuchi-question__heading {
-    inline-size: calc((121/788)*100%);
-    margin-inline-start: calc((70/788)*100%);
-    padding-block: calc((7/788)*100%);
-    font-size: min(calc(26/var(--layout-width-max)*100vw), calc(20*var(--rem-ratio)));
+    inline-size: calc((121 / 788) * 100%);
+    margin-inline-start: calc((70 / 788) * 100%);
+    padding-block: calc((7 / 788) * 100%);
+    font-size: min(calc(26 / var(--layout-width-max) * 100vw), calc(20 * var(--rem-ratio)));
   }
 
   .c-kokuchi-question__text {
-    inline-size: calc((649/788)*100%);
-    margin-block-start: calc((17/788)*100%);
-    font-size: min(calc(20/var(--layout-width-max)*100vw), calc(15*var(--rem-ratio)));
+    inline-size: calc((649 / 788) * 100%);
+    margin-block-start: calc((17 / 788) * 100%);
+    font-size: min(calc(20 / var(--layout-width-max) * 100vw), calc(15 * var(--rem-ratio)));
   }
 
   .c-kokuchi-question__button-box {
-    gap: calc((37/788)*100%);
+    gap: calc((37 / 788) * 100%);
   }
 
   .c-kokuchi-question__button {
-    inline-size: calc((194/788)*100%);
-    padding-block: calc((11/788)*100%);
-    font-size: min(calc(32/var(--layout-width-max)*100vw), calc(24*var(--rem-ratio)));
+    inline-size: calc((194 / 788) * 100%);
+    padding-block: calc((11 / 788) * 100%);
+    font-size: min(calc(32 / var(--layout-width-max) * 100vw), calc(24 * var(--rem-ratio)));
   }
 
   .c-kokuchi-answer__text {
-    margin-block-start: calc((34/788)*100%);
-    padding-inline: calc((62/788)*100%);
-    font-size: min(calc(24/var(--layout-width-max)*100vw), calc(18*var(--rem-ratio)));
+    margin-block-start: calc((34 / 788) * 100%);
+    padding-inline: calc((62 / 788) * 100%);
+    font-size: min(calc(24 / var(--layout-width-max) * 100vw), calc(18 * var(--rem-ratio)));
     text-align: start;
     line-height: var(--leading-normal);
   }
 
   .c-kokuchi-answer__text--freeshiryou {
     margin: 0;
-    font-size: min(calc(42/var(--layout-width-max)*100vw), calc(32*var(--rem-ratio)));
+    font-size: min(calc(42 / var(--layout-width-max) * 100vw), calc(32 * var(--rem-ratio)));
   }
 
   .c-kokuchi-pattern {
-    margin-block-start: calc((50/788)*100%);
+    margin-block-start: calc((50 / 788) * 100%);
   }
 
   .c-kokuchi-answer__arrow {
-    inline-size: min(calc((232/788)*100%), 178px);
+    inline-size: min(calc((232 / 788) * 100%), 178px);
   }
 
   .c-kokuchi-answer__button {
-    inline-size: calc((486/788)*100%);
+    inline-size: calc((486 / 788) * 100%);
   }
 
   .c-kokuchi-answer__button--free-shiryou {
-    inline-size: min(calc((542/643)*100%), 542px);
-    margin-block-start: calc((19/643)*100%);
+    inline-size: min(calc((542 / 643) * 100%), 542px);
+    margin-block-start: calc((19 / 643) * 100%);
   }
-  
+
   .c-kokuchi-answer__button-link {
-    font-size: min(calc(33/var(--layout-width-max)*100vw), calc(25*var(--rem-ratio)));
-    padding-block: calc((24/542)*100%);
+    font-size: min(calc(33 / var(--layout-width-max) * 100vw), calc(25 * var(--rem-ratio)));
+    padding-block: calc((24 / 542) * 100%);
     border-radius: var(--rounded-56);
   }
 
@@ -888,37 +888,38 @@
   }
 
   .c-kokuchi-answer__button-link-small {
-    font-size: min(calc(30/var(--layout-width-max)*100vw), calc(23*var(--rem-ratio)));
-  } 
+    font-size: min(calc(30 / var(--layout-width-max) * 100vw), calc(23 * var(--rem-ratio)));
+  }
 
   .c-kokuchi-answer__button-arrow {
-    inline-size: calc((17/486)*100%);
+    inline-size: calc((17 / 486) * 100%);
   }
 
   .c-kokuchi-answer__button-box {
-    inline-size: calc((643/788)*100%);
+    inline-size: calc((643 / 788) * 100%);
   }
 
   .c-kokuchi-answert__button-box-inner {
-    padding-block: calc((30/643)*100%);
+    padding-block: calc((30 / 643) * 100%);
   }
 
   /* plans */
   .c-section-heading--plans {
-    inline-size: min(calc(475/var(--layout-width-max)*100%), 365px);
+    inline-size: min(calc(475 / var(--layout-width-max) * 100%), 365px);
   }
-  
+
   /* qa */
   .c-qa-box__question {
     align-items: center;
   }
 
   .c-qa-box__question-text {
-    font-size: calc(19* var(--rem-ratio));
+    font-size: calc(19 * var(--rem-ratio));
   }
 
-  .c-qa-box__answer-text, .c-qa-box__answer-link {
-    font-size: calc(17* var(--rem-ratio));
+  .c-qa-box__answer-text,
+  .c-qa-box__answer-link {
+    font-size: calc(17 * var(--rem-ratio));
   }
 }
 

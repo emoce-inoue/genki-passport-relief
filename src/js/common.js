@@ -114,7 +114,7 @@ const toggleFloat = () => {
   } else {
     float.classList.remove('l-sticky-float--show');
   }
-}
+};
 
 window.addEventListener('load', () => {
   const loadElms = document.querySelectorAll('.js-load');

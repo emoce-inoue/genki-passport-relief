@@ -28,17 +28,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:wght@100..900&display=swap" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NXX8WRP');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NXX8WRP');
+    </script>
     <!-- End Google Tag Manager -->
   </head>
   <body class="body">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXX8WRP"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXX8WRP" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="wrapper js-load">
       <header class="header">
@@ -53,16 +59,20 @@
         <a href="#sectionShiryou" class="l-sticky-float__link js-scroll-link">
           <div class="l-sticky-float__inner">
             <p class="l-sticky-float__heading no-pc">資料請求</p>
-            <p class="l-sticky-float__heading l-sticky-float__heading--pc no-sp">資料請求<span class="l-sticky-float__heading-small">は</span>こちら</p>
+            <p class="no-sp l-sticky-float__heading--pc">
+              <span class="l-sticky-float__heading">
+                資料請求<span class="l-sticky-float__heading-small">は</span>こちら
+              </span>
+            </p>
             <div class="l-sticky-float__icon"><img src="images/free-shiryou-icon.svg" alt="資料アイコン" width="84" height="65" loading="lazy" /></div>
-            <div class="l-sticky-float__arrow no-sp"><img src="images/float-arrow.svg" alt="矢印" width="12" height="12"></div>
+            <div class="l-sticky-float__arrow no-sp"><img src="images/float-arrow.svg" alt="矢印" width="12" height="12" /></div>
           </div>
           <p class="l-sticky-float__pop">
             <picture>
-              <source media="(max-width: 768px)" srcset="images/webp/float-head-sp.webp" type="image/webp" width="161" height="70">
-              <source srcset="images/webp/float-head-pc.webp" type="image/webp" width="113" height="49">
-              <img class="no-sp" src="images/float-head-pc.png" alt="無料" width="113" height="49">
-              <img class="no-pc" src="images/float-head-sp.png" alt="無料" width="161" height="70">
+              <source media="(max-width: 768px)" srcset="images/webp/float-head-sp.webp" type="image/webp" width="161" height="70" />
+              <source srcset="images/webp/float-head-pc.webp" type="image/webp" width="113" height="49" />
+              <img class="no-sp" src="images/float-head-pc.png" alt="無料" width="113" height="49" />
+              <img class="no-pc" src="images/float-head-sp.png" alt="無料" width="161" height="70" />
             </picture>
           </p>
         </a>
@@ -227,8 +237,8 @@
             </p>
           </div>
           <p class="l-section-kokuchi__headline">
-            <img class="no-pc" src="images/kokuchi-head-text-sp.svg" alt="質問２つに回答して 申し込みできるかチェック！" width="536" height="111">
-            <img class="no-sp" src="images/kokuchi-head-text-pc.svg" alt="質問２つに回答して 申し込みできるかチェック！" width="660" height="56">
+            <img class="no-pc" src="images/kokuchi-head-text-sp.svg" alt="質問２つに回答して 申し込みできるかチェック！" width="536" height="111" />
+            <img class="no-sp" src="images/kokuchi-head-text-pc.svg" alt="質問２つに回答して 申し込みできるかチェック！" width="660" height="56" />
           </p>
           <div class="l-section-kokuchi__qa-wrapper">
             <div class="l-section-kokuchi__qa js-scrollin">
@@ -241,12 +251,12 @@
                 </div>
               </div>
               <div id="kokuchiPattern1" class="c-kokuchi-pattern">
-                <div class="c-kokuchi-answer__arrow"><img src="images/kokuchi-answer-arrow.svg" alt="矢印" width="267" height="48"></div>
+                <div class="c-kokuchi-answer__arrow"><img src="images/kokuchi-answer-arrow.svg" alt="矢印" width="267" height="48" /></div>
                 <div class="c-kokuchi-answer">
                   <p class="c-kokuchi-answer__text">本商品のお申し込みはいただけませんが、<br class="no-pc" />詳しく告知いただくことで<br class="no-pc" />別商品のご案内ができる可能性があります。</p>
                   <a href="#sectionShiryou" class="c-kokuchi-answer__button js-scroll-link">
                     <div class="c-kokuchi-answer__button-link">相談してみる</div>
-                    <div class="c-kokuchi-answer__button-arrow"><img src="images/kokuchi-arrow.svg" alt="矢印" width="24" height="22"></div>
+                    <div class="c-kokuchi-answer__button-arrow"><img src="images/kokuchi-arrow.svg" alt="矢印" width="24" height="22" /></div>
                   </a>
                 </div>
               </div>
@@ -262,19 +272,17 @@
               </div>
               <div id="kokuchiPattern3" class="c-kokuchi-pattern">
                 <div class="c-kokuchi-answer">
-                  <div class="c-kokuchi-answer__arrow"><img src="images/kokuchi-answer-arrow.svg" alt="矢印" width="267" height="48"></div>
-                  <p class="c-kokuchi-answer__text">
-                    該当事項が特定の入院・手術・治療等の場合<br class="no-pc" />には「いいえ」になります。<br class="no-pc" />申込可能か、詳しくお聞かせください。
-                  </p>
+                  <div class="c-kokuchi-answer__arrow"><img src="images/kokuchi-answer-arrow.svg" alt="矢印" width="267" height="48" /></div>
+                  <p class="c-kokuchi-answer__text"> 該当事項が特定の入院・手術・治療等の場合<br class="no-pc" />には「いいえ」になります。<br class="no-pc" />申込可能か、詳しくお聞かせください。 </p>
                   <a href="#sectionShiryou" class="c-kokuchi-answer__button js-scroll-link">
                     <div class="c-kokuchi-answer__button-link">相談してみる</div>
-                    <div class="c-kokuchi-answer__button-arrow"><img src="images/kokuchi-arrow.svg" alt="矢印" width="24" height="22"></div>
+                    <div class="c-kokuchi-answer__button-arrow"><img src="images/kokuchi-arrow.svg" alt="矢印" width="24" height="22" /></div>
                   </a>
                 </div>
               </div>
               <div id="kokuchiPattern4" class="c-kokuchi-pattern">
                 <div class="c-kokuchi-answer">
-                  <div class="c-kokuchi-answer__arrow"><img src="images/kokuchi-answer-arrow.svg" alt="矢印" width="267" height="48"></div>
+                  <div class="c-kokuchi-answer__arrow"><img src="images/kokuchi-answer-arrow.svg" alt="矢印" width="267" height="48" /></div>
                   <div class="c-kokuchi-answer__button-box">
                     <div class="c-kokuchi-answert__button-box-inner">
                       <p class="c-kokuchi-answer__text c-kokuchi-answer__text--freeshiryou">お申し込みいただけます！</p>
@@ -304,38 +312,38 @@
                 <div class="swiper-slide">
                   <div class="l-section-plans__slide">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="images/webp/plan-popular-pc.webp" type="image/webp" width="1001" height="538">
-                      <source srcset="images/webp/plan-popular-sp.webp" type="image/webp" width="692" height="982">
-                      <img class="l-section-plans__slide-img no-sp" src="images/plan-popular-pc.png" alt="人気プラン" width="1001" height="538">
-                      <img class="l-section-plans__slide-img no-pc" src="images/plan-popular-sp.png" alt="人気プラン" width="692" height="982">
+                      <source media="(min-width: 768px)" srcset="images/webp/plan-popular-pc.webp" type="image/webp" width="1001" height="538" />
+                      <source srcset="images/webp/plan-popular-sp.webp" type="image/webp" width="692" height="982" />
+                      <img class="l-section-plans__slide-img no-sp" src="images/plan-popular-pc.png" alt="人気プラン" width="1001" height="538" />
+                      <img class="l-section-plans__slide-img no-pc" src="images/plan-popular-sp.png" alt="人気プラン" width="692" height="982" />
                     </picture>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="l-section-plans__slide">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="images/webp/plan-full-pc.webp" type="image/webp" width="1001" height="538">
-                      <source srcset="images/webp/plan-full-sp.webp" type="image/webp" width="692" height="982">
-                      <img class="l-section-plans__slide-img no-sp" src="images/plan-full-pc.png" alt="人気プラン" width="1001" height="538">
-                      <img class="l-section-plans__slide-img no-pc" src="images/plan-full-sp.png" alt="人気プラン" width="692" height="982">
+                      <source media="(min-width: 768px)" srcset="images/webp/plan-full-pc.webp" type="image/webp" width="1001" height="538" />
+                      <source srcset="images/webp/plan-full-sp.webp" type="image/webp" width="692" height="982" />
+                      <img class="l-section-plans__slide-img no-sp" src="images/plan-full-pc.png" alt="人気プラン" width="1001" height="538" />
+                      <img class="l-section-plans__slide-img no-pc" src="images/plan-full-sp.png" alt="人気プラン" width="692" height="982" />
                     </picture>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="l-section-plans__slide">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="images/webp/plan-simple-pc.webp" type="image/webp" width="1001" height="538">
-                      <source srcset="images/webp/plan-simple-sp.webp" type="image/webp" width="692" height="982">
-                      <img class="l-section-plans__slide-img no-sp" src="images/plan-simple-pc.png" alt="人気プラン" width="1001" height="538">
-                      <img class="l-section-plans__slide-img no-pc" src="images/plan-simple-sp.png" alt="人気プラン" width="692" height="982">
+                      <source media="(min-width: 768px)" srcset="images/webp/plan-simple-pc.webp" type="image/webp" width="1001" height="538" />
+                      <source srcset="images/webp/plan-simple-sp.webp" type="image/webp" width="692" height="982" />
+                      <img class="l-section-plans__slide-img no-sp" src="images/plan-simple-pc.png" alt="人気プラン" width="1001" height="538" />
+                      <img class="l-section-plans__slide-img no-pc" src="images/plan-simple-sp.png" alt="人気プラン" width="692" height="982" />
                     </picture>
                   </div>
                 </div>
               </div>
               <div class="swiper-parts-wrapper">
-                <div class="swiper-button-prev"><img src="images/slide-arrow-prev.svg" alt="前" width="35" height="40"></div>
+                <div class="swiper-button-prev"><img src="images/slide-arrow-prev.svg" alt="前" width="35" height="40" /></div>
                 <div class="js-swiper-pagination"></div>
-                <div class="swiper-button-next"><img src="images/slide-arrow-next.svg" alt="次" width="35" height="40"></div>
+                <div class="swiper-button-next"><img src="images/slide-arrow-next.svg" alt="次" width="35" height="40" /></div>
               </div>
             </div>
           </div>
@@ -367,12 +375,16 @@
           <div class="c-qa-accordion js-scrollin">
             <details class="c-qa-box">
               <summary class="c-qa-box__question">
-                <span class="c-qa-box__question-icon"><span class="c-qa-box__question-icon-elm"><img class="c-qa-box__question-icon-img" src="images/qa-q.svg" alt="Q" width="14" height="14" type="image/webp" /></span></span>
+                <span class="c-qa-box__question-icon"
+                  ><span class="c-qa-box__question-icon-elm"><img class="c-qa-box__question-icon-img" src="images/qa-q.svg" alt="Q" width="14" height="14" type="image/webp" /></span
+                ></span>
                 <span class="c-qa-box__question-text">資料請求は無料ですか？</span>
-                <span class="c-qa-box__question-close"><img src="images/question-close.svg" alt="閉じるアイコン" width="30" height="30"></span>
+                <span class="c-qa-box__question-close"><img src="images/question-close.svg" alt="閉じるアイコン" width="30" height="30" /></span>
               </summary>
               <div class="c-qa-box__answer">
-                <span class="c-qa-box__answer-icon"><span class="c-qa-box__answer-icon-elm"><img class="c-qa-box__answer-icon-img" src="images/qa-a.svg" alt="A" width="12" height="13" type="image/webp" /></span></span>
+                <span class="c-qa-box__answer-icon"
+                  ><span class="c-qa-box__answer-icon-elm"><img class="c-qa-box__answer-icon-img" src="images/qa-a.svg" alt="A" width="12" height="13" type="image/webp" /></span
+                ></span>
                 <p class="c-qa-box__answer-text">はい、無料です。お気軽にご請求ください。</p>
               </div>
             </details>
@@ -382,7 +394,7 @@
                   ><span class="c-qa-box__question-icon-elm"><img class="c-qa-box__question-icon-img" src="images/qa-q.svg" alt="Q" width="14" height="14" type="image/webp" /></span
                 ></span>
                 <span class="c-qa-box__question-text">資料請求したら保険に入らないといけませんか？</span>
-                <span class="c-qa-box__question-close"><img src="images/question-close.svg" alt="閉じるアイコン" width="30" height="30"></span>
+                <span class="c-qa-box__question-close"><img src="images/question-close.svg" alt="閉じるアイコン" width="30" height="30" /></span>
               </summary>
               <div class="c-qa-box__answer">
                 <span class="c-qa-box__answer-icon"
@@ -397,14 +409,14 @@
                   ><span class="c-qa-box__question-icon-elm"><img class="c-qa-box__question-icon-img" src="images/qa-q.svg" alt="Q" width="14" height="14" type="image/webp" /></span
                 ></span>
                 <span class="c-qa-box__question-text">告知に該当があっても申し込みできますか？</span>
-                <span class="c-qa-box__question-close"><img src="images/question-close.svg" alt="閉じるアイコン" width="30" height="30"></span>
+                <span class="c-qa-box__question-close"><img src="images/question-close.svg" alt="閉じるアイコン" width="30" height="30" /></span>
               </summary>
               <div class="c-qa-box__answer">
                 <span class="c-qa-box__answer-icon"
                   ><span class="c-qa-box__answer-icon-elm"><img class="c-qa-box__answer-icon-img" src="images/qa-a.svg" alt="A" width="12" height="13" type="image/webp" /></span
                 ></span>
                 <p class="c-qa-box__answer-text c-qa-box__answer-text--strong">
-                  病名や手術の内容によってはお申し込みできる可能性がございます。ご自身で判断せず、ぜひ一度ご相談ください。<br>
+                  病名や手術の内容によってはお申し込みできる可能性がございます。ご自身で判断せず、ぜひ一度ご相談ください。<br />
                   <a href="#sectionShiryou" class="c-qa-box__answer-link js-scroll-link">ご相談はこちら</a>
                 </p>
               </div>

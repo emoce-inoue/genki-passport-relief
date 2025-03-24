@@ -75,11 +75,11 @@
   --plans-gray: var(--color-grayscale-800);
   --parts: var(--color-grayscale-300);
   --shine: var(--color-grayscale-400);
-  --shadow-freeshiryou-btn: 0px 6px 6px 0px rgb(7 66 110 / 100%);
-  --shadow-kokuchi-freeshiryou-btn-base: 0px 3px 3.5px 0px rgb(0 0 0 / 25%);
-  --shadow-kokuchi-freeshiryou-btn-cover: 0px 6px 6px 0px rgb(195 184 186 / 100%);
-  --shadow-freeshiryou-btn-pink: 0px 2px 2px 0px rgb(0 0 0 / 25%);
-  --shadow-kokuchi-soudan-btn: 0px 3px 2px 0px rgba(0, 0, 0, 0.25);
+  --shadow-freeshiryou-btn: 0 6px 6px 0 rgb(7 66 110 / 100%);
+  --shadow-kokuchi-freeshiryou-btn-base: 0 3px 3.5px 0 rgb(0 0 0 / 25%);
+  --shadow-kokuchi-freeshiryou-btn-cover: 0 6px 6px 0 rgb(195 184 186 / 100%);
+  --shadow-freeshiryou-btn-pink: 0 2px 2px 0 rgb(0 0 0 / 25%);
+  --shadow-kokuchi-soudan-btn: 0 3px 2px 0 rgb(0 0 0 / 25%);
 
   /* z-index */
   --back-z-index: -1;
