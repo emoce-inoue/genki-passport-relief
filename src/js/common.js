@@ -1,3 +1,15 @@
+const windowValues = {
+  get winTop() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+  },
+  get winW() {
+    return window.innerWidth;
+  },
+  get winH() {
+    return window.innerHeight;
+  },
+};
+
 const setSlider = () => {
   if (window.Swiper) {
     new window.Swiper('.swiper', {
@@ -91,6 +103,19 @@ const initializeKokuchiFlow = () => {
   buttons.forEach((button) => button.addEventListener('click', (e) => handleButtonClick(e)));
 };
 
+const toggleFloat = () => {
+  const float = document.querySelector('.l-sticky-float');
+  const startContent = document.querySelector('.l-section-topmessage');
+  const startTop = startContent.getBoundingClientRect().top + windowValues.winTop;
+  const headerH = document.querySelector('.header').offsetHeight;
+
+  if (startTop <= windowValues.winTop + headerH) {
+    float.classList.add('l-sticky-float--show');
+  } else {
+    float.classList.remove('l-sticky-float--show');
+  }
+}
+
 window.addEventListener('load', () => {
   const loadElms = document.querySelectorAll('.js-load');
   loadElms.forEach((loadElm) => {
@@ -104,8 +129,13 @@ window.addEventListener('load', () => {
       loadElm.classList.add(`${classes[1]}--loaded`);
     }
   });
+  toggleFloat();
   setSlider();
   triggerAnimation();
   setInterval(triggerAnimation, 5000);
   initializeKokuchiFlow();
+});
+
+window.addEventListener('scroll', () => {
+  toggleFloat();
 });

@@ -45,8 +45,28 @@
         <div class="header__logo">
           <a href="https://www.financial-agency.com/service/genki-passport-relief/" class="header__logo-link"><img class="header__logo-img" src="images/logo.svg" alt="イオン・アリアンツ生命" width="152" height="13" /></a>
         </div>
-        <a href="#sectionShiryou" class="header__btn js-scroll-link">無料で資料請求</a>
+        <div class="header__shiryou-button no-sp">
+          <a href="#sectionShiryou" class="header__shiryou-button-link js-scroll-link">無料<span class="header__shiryou-button-link-small">で</span>資料請求</a>
+        </div>
       </header>
+      <div class="l-sticky-float">
+        <a href="#sectionShiryou" class="l-sticky-float__link js-scroll-link">
+          <div class="l-sticky-float__inner">
+            <p class="l-sticky-float__heading no-pc">資料請求</p>
+            <p class="l-sticky-float__heading l-sticky-float__heading--pc no-sp">資料請求<span class="l-sticky-float__heading-small">は</span>こちら</p>
+            <div class="l-sticky-float__icon"><img src="images/free-shiryou-icon.svg" alt="資料アイコン" width="84" height="65" loading="lazy" /></div>
+            <div class="l-sticky-float__arrow no-sp"><img src="images/float-arrow.svg" alt="矢印" width="12" height="12"></div>
+          </div>
+          <p class="l-sticky-float__pop">
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/webp/float-head-sp.webp" type="image/webp" width="161" height="70">
+              <source srcset="images/webp/float-head-pc.webp" type="image/webp" width="113" height="49">
+              <img class="no-sp" src="images/float-head-pc.png" alt="無料" width="113" height="49">
+              <img class="no-pc" src="images/float-head-sp.png" alt="無料" width="161" height="70">
+            </picture>
+          </p>
+        </a>
+      </div>
       <section class="l-section-hero">
         <div class="l-section-hero__inner">
           <div class="l-section-hero__content">
@@ -86,17 +106,17 @@
               </picture>
             </div>
             <div class="l-section-hero__disease">
-              <p class="l-section-hero__disease-heading js-load"><img class="l-section-hero__disease-heading-img" src="images/hero-head.svg" alt="こんな方でもお申し込みOK！" width="200" height="16" /></p>
+              <p class="l-section-hero__disease-heading"><img class="l-section-hero__disease-heading-img" src="images/hero-head.svg" alt="こんな方でもお申し込みOK！" width="200" height="16" /></p>
               <ul class="l-section-hero__disease-list-wrapper">
-                <li class="c-hero-disease-list c-hero-disease-list--list1 js-load">
+                <li class="c-hero-disease-list c-hero-disease-list--list1">
                   <p class="c-hero-disease-list__heading">ガン</p>
                   <p class="c-hero-disease-list__text">経験がある</p>
                 </li>
-                <li class="c-hero-disease-list c-hero-disease-list--list2 js-load">
+                <li class="c-hero-disease-list c-hero-disease-list--list2">
                   <p class="c-hero-disease-list__heading">脳・心臓</p>
                   <p class="c-hero-disease-list__text">病歴がある</p>
                 </li>
-                <li class="c-hero-disease-list c-hero-disease-list--list3 c-hero-disease-list--small js-load">
+                <li class="c-hero-disease-list c-hero-disease-list--list3 c-hero-disease-list--small">
                   <p class="c-hero-disease-list__heading">糖尿病</p>
                   <p class="c-hero-disease-list__text">持病がある</p>
                 </li>
@@ -104,418 +124,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="l-section-topmessage js-scrollin">
-        <div class="l-section-topmessage__logo">
-          <picture>
-            <source srcset="images/webp/passport-logo.webp" width="492" height="106" type="image/webp" />
-            <img src="images/passport-logo.png" alt="持病があっても入りやすい 元気パスポートワイド" width="246" height="53" loading="lazy" />
-          </picture>
-        </div>
-        <a href="#sectionShiryou" class="c-freeshiryou-button js-scroll-link">
-          <p class="c-freeshiryou-pop">
-            <picture>
-              <source srcset="images/webp/free-shiryou-btn-pop.webp" width="169" height="51" type="image/webp" />
-              <img class="c-freeshiryou-pop-img" src="images/free-shiryou-btn-pop.png" alt="かんたん1分！" width="153" height="47" loading="lazy" />
-            </picture>
-          </p>
-          <div class="c-freeshiryou-button__link">
-            <div class="c-freeshiryou-button__icon"><img class="c-freeshiryou-button__icon-img" src="images/free-shiryou-icon.svg" alt="資料アイコン" width="24" height="18" loading="lazy" /></div>
-            <p class="c-freeshiryou-button__text">無料の資料請求はこちら</p>
-            <div class="c-freeshiryou-button__arrow"><img class="c-freeshiryou-button__arrow-img" src="images/free-shiryou-arrow.svg" alt="矢印" width="10" height="16" loading="lazy" /></div>
-          </div>
-        </a>
-      </section>
-      <section class="l-section-kokuchi">
-        <div class="l-section-kokuchi__heading-wrapper js-scrollin">
-          <p class="c-section-heading c-section-heading--kokuchi">
-            <picture>
-              <source srcset="images/webp/kokuchi-head.webp" width="218" height="60" type="image/webp" />
-              <img class="c-section-heading-img" src="images/kokuchi-head.png" alt="告知項目" width="218" height="60" loading="lazy" />
-            </picture>
-          </p>
-          <p class="l-section-kokuchi__pop"><img class="l-section-kokuchi__pop-img" src="images/kokuchi-head-pop.svg" alt="まずはチェック" width="56" height="54" loading="lazy" /></p>
-        </div>
-        <div class="l-section-kokuchi__qa js-scrollin">
-          <div class="c-kokuchi-question">
-            <p class="c-kokuchi-question__heading">告知1</p>
-            <p class="c-kokuchi-question__text">最近3か月以内に、医師・歯科医師から入院・手術・放射線治療のいずれかを進められたことはありますか。</p>
-            <div class="c-kokuchi-question__button-box">
-              <div class="c-kokuchi-question__button" data-step="1">はい</div>
-              <div class="c-kokuchi-question__button" data-step="1">いいえ</div>
-            </div>
-          </div>
-          <div id="kokuchiPattern1" class="c-kokuchi-pattern">
-            <div class="c-kokuchi-answer__arrow"></div>
-            <div class="c-kokuchi-answer">
-              <p class="c-kokuchi-answer__text">
-                本商品のお申し込みはいただけませんが、<br />
-                詳しく告知いただくことで<br />
-                別商品のご案内ができる可能性があります。
-              </p>
-              <a href="#sectionShiryou" class="c-kokuchi-answer__btn js-scroll-link">
-                <div class="c-kokuchi-answer__btn-link">相談してみる</div>
-              </a>
-            </div>
-          </div>
-          <div id="kokuchiPattern2" class="c-kokuchi-pattern">
-            <div class="c-kokuchi-question">
-              <p class="c-kokuchi-question__heading">告知2</p>
-              <p class="c-kokuchi-question__text">過去1年以内に、病気やケガで入院・手術・放射線治療・先進医療をうけたことがありますか。</p>
-              <div class="c-kokuchi-question__button-box">
-                <div class="c-kokuchi-question__button" data-step="2">はい</div>
-                <div class="c-kokuchi-question__button" data-step="2">いいえ</div>
-              </div>
-            </div>
-          </div>
-          <div id="kokuchiPattern3" class="c-kokuchi-pattern">
-            <div class="c-kokuchi-answer">
-              <div class="c-kokuchi-answer__arrow"></div>
-              <p class="c-kokuchi-answer__text">
-                該当事項が特定の入院・手術・治療等の場合<br />
-                には「いいえ」になります。<br />
-                申込可能か、詳しくお聞かせください。
-              </p>
-              <a href="#sectionShiryou" class="c-kokuchi-answer__btn js-scroll-link">
-                <div class="c-kokuchi-answer__btn-link">相談してみる</div>
-              </a>
-            </div>
-          </div>
-          <div id="kokuchiPattern4" class="c-kokuchi-pattern">
-            <div class="c-kokuchi-answer">
-              <div class="c-kokuchi-answer__arrow"></div>
-              <p class="c-kokuchi-answer__text">お申し込みいただけます！</p>
-              <a href="#sectionShiryou" class="c-kokuchi-answer__btn c-kokuchi-answer__btn--free-shiryou js-scroll-link">
-                <span class="c-kokuchi-answer__btn-pop">
-                  <picture>
-                    <source srcset="images/webp/kokuchi-btn-pop.webp" width="257" height="46" type="image/webp" />
-                    <img class="c-kokuchi-answer__btn-pop-img" src="images/kokuchi-btn-pop.png" alt="告知に該当しない今がチャンス！" width="257" height="46" loading="lazy" />
-                  </picture>
-                </span>
-                <div class="c-kokuchi-answer__btn-link c-kokuchi-answer__btn-link--freeshiryou">無料<span class="c-kokuchi-answer__btn-link-small">の</span>資料請求</div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <p class="l-section-kokuchi__attention">※ここで回答いただいても、告知いただいたことにはなりません。お申し込み時に改めて体況を告知にてご申告ください。</p>
-      </section>
-      <section class="l-section-points">
-        <p class="c-section-heading c-section-heading--point js-scrollin">
-          <picture>
-            <source srcset="images/webp/point-head.webp" width="247" height="51" type="image/webp" />
-            <img class="c-section-heading-img" src="images/point-head.png" alt="3つのポイント" width="247" height="51" loading="lazy" />
-          </picture>
-        </p>
-        <div class="l-section-points__inner">
-          <ul class="l-section-points__list-wrapper">
-            <li class="c-points-list js-scrollin">
-              <p class="c-points-list__heading">
-                <img class="c-points-list__heading-img" src="images/point-title1.svg" alt="ポイント1" width="264" height="36" loading="lazy" />
-              </p>
-              <div class="c-points-list__info">
-                <div class="c-points-list__info-icon">
-                  <picture>
-                    <source srcset="images/webp/point-icon1.webp" width="164" height="164" type="image/webp" />
-                    <img src="images/point-icon1.png" alt="ポイント1" width="164" height="164" loading="lazy" />
-                  </picture>
-                </div>
-                <p class="c-points-list__info-text">
-                  持病がある方も入りやすいように、<span class="c-points-list__info-text c-points-list__info-text--yellow">告知はたった２つ</span>だけ！<br />
-                  告知に該当しなければ、お申し込みいただけます。
-                </p>
-              </div>
-            </li>
-            <li class="c-points-list js-scrollin">
-              <p class="c-points-list__heading">
-                <img class="c-points-list__heading-img" src="images/point-title2.svg" alt="ポイント2" width="264" height="37" loading="lazy" />
-              </p>
-              <div class="c-points-list__info">
-                <div class="c-points-list__info-icon">
-                  <picture>
-                    <source srcset="images/webp/point-icon2.webp" width="164" height="164" type="image/webp" />
-                    <img src="images/point-icon1.png" alt="ポイント2" width="164" height="164" loading="lazy" />
-                  </picture>
-                </div>
-                <p class="c-points-list__info-text">
-                  <span class="c-points-list__info-text c-points-list__info-text--yellow">持病の再発・悪化</span>も保障します！<br />
-                  さらに、ご契約1年目に給付金請求をすることがあっても保障は<span class="c-points-list__info-text c-points-list__info-text--yellow">満額</span>お受け取りいただけます。
-                </p>
-              </div>
-            </li>
-            <li class="c-points-list js-scrollin">
-              <p class="c-points-list__heading">
-                <img class="c-points-list__heading-img" src="images/point-title3.svg" alt="ポイント3" width="264" height="36" loading="lazy" />
-              </p>
-              <div class="c-points-list__info">
-                <div class="c-points-list__info-icon">
-                  <picture>
-                    <source srcset="images/webp/point-icon3.webp" width="164" height="164" type="image/webp" />
-                    <img src="images/point-icon3.png" alt="ポイント3" width="164" height="164" loading="lazy" />
-                  </picture>
-                </div>
-                <p class="c-points-list__info-text">
-                  一時金が<span class="c-points-list__info-text c-points-list__info-text--yellow">最大10万円！</span><sup class="c-points-list__info-num">*1</sup><br />
-                  日帰り入院から受け取れるから短い入院の時でも安心！<br />
-                  <span class="c-points-list__info-text c-points-list__info-text--attention">※一時金は1万円単位で選択が可能</span>
-                </p>
-              </div>
-            </li>
-          </ul>
-          <p class="l-section-points__attention js-scrollin"> ＊1 健康状態によっては一時金20万まで案内可能な場合があります。 </p>
-        </div>
-      </section>
-      <section class="l-section-plans">
-        <p class="c-section-heading c-section-heading--plans js-scrollin">
-          <picture>
-            <source srcset="images/webp/plan-head.webp" width="222" height="60" type="image/webp" />
-            <img class="c-section-heading-img" src="images/plan-head.png" alt="プラン例" width="222" height="60" loading="lazy" />
-          </picture>
-        </p>
-        <div class="l-section-plans__list-wrapper js-scrollin">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="c-plans-list">
-                  <div class="c-plans-list__headline">
-                    <div class="c-plans-list__headline-image c-plans-list__headline-image--1">
-                      <picture>
-                        <source srcset="images/webp/plan-simple-man.webp" width="148" height="134" type="image/webp" />
-                        <img src="images/plan-simple-man.png" alt="シンプルプラン男性" width="148" height="134" loading="lazy" />
-                      </picture>
-                    </div>
-                    <div class="c-plans-list__headline-heading">
-                      <p class="c-plans-list__headline-heading-sub">入院手術の基本保障をしっかり備える！</p>
-                      <p class="c-plans-list__headline-heading-main">シンプルプラン</p>
-                    </div>
-                  </div>
-                  <div class="c-plans-list__customer">
-                    <div class="c-plans-list__customer-line">
-                      <p class="c-plans-list__customer-text">65歳<span class="c-plans-list__customer-gender">男性</span></p>
-                      <p class="c-plans-list__customer-price">月額保険料 3,393円</p>
-                    </div>
-                    <div class="c-plans-list__customer-line">
-                      <p class="c-plans-list__customer-term">保険料払込期間：終身、保険料払込経路：口座振替月払</p>
-                    </div>
-                  </div>
-                  <div class="c-plans-list__keiyaku-detail">
-                    <div class="c-plans-list__keiyaku-box c-plans-list__keiyaku-box--type1">
-                      <div class="c-plans-list__col c-plans-list__col--single">
-                        <p class="c-plans-list__heading c-plans-list__heading--gray">主契約</p>
-                        <ul class="c-plans-list__list-wrap c-plans-list__list-wrap--single">
-                          <li class="c-plans-list__item">● 入院給付日額：3,000円</li>
-                          <li class="c-plans-list__item">● 給付限度の型：60日型</li>
-                          <li class="c-plans-list__item">● 手術給付金の型：5倍型</li>
-                          <li class="c-plans-list__item">● 放射線治療給付金の型：5倍型</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="c-plans-list__keiyaku-box c-plans-list__keiyaku-box--type2">
-                      <p class="c-plans-list__keiyaku-heading">10日間入院＋手術した場合</p>
-                      <div class="c-plans-list__data">
-                        <div class="c-plans-list__data-item">
-                          <p class="c-plans-list__data-text">
-                            入院給付金<br />
-                            3,000円×10日
-                          </p>
-                          <p class="c-plans-list__data-price"><span class="c-plans-list__data-num">3</span>万円</p>
-                        </div>
-                        <div class="c-plans-list__data-plus-icon"></div>
-                        <div class="c-plans-list__data-item">
-                          <p class="c-plans-list__data-text">
-                            手術給付金<br />
-                            （入院中）
-                          </p>
-                          <p class="c-plans-list__data-price"><span class="c-plans-list__data-num">1.5</span>万円</p>
-                        </div>
-                      </div>
-                      <p class="c-plans-list__catch"
-                        >合計<span class="c-plans-list__catch c-plans-list__catch--large">4.5<span class="c-plans-list__catch c-plans-list__catch--blue">万円</span></span
-                        >の給付金が受け取れる！</p
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="c-plans-list">
-                  <div class="c-plans-list__headline">
-                    <div class="c-plans-list__headline-image c-plans-list__headline-image--2">
-                      <picture>
-                        <source srcset="images/webp/plan-famous-man.webp" width="127" height="132" type="image/webp" />
-                        <img src="images/plan-famous-man.png" alt="人気プラン女性" width="127" height="132" loading="lazy" />
-                      </picture>
-                    </div>
-                    <div class="c-plans-list__headline-heading">
-                      <p class="c-plans-list__headline-heading-sub">一時金と合わせてしっかり保障！</p>
-                      <p class="c-plans-list__headline-heading-main">人気プラン</p>
-                    </div>
-                  </div>
-                  <div class="c-plans-list__customer">
-                    <div class="c-plans-list__customer-line">
-                      <p class="c-plans-list__customer-text">55歳<span class="c-plans-list__customer-gender">女性</span></p>
-                      <p class="c-plans-list__customer-price">月額保険料 4,989円</p>
-                    </div>
-                    <div class="c-plans-list__customer-line">
-                      <p class="c-plans-list__customer-term">保険料払込期間：終身、保険料払込経路：口座振替月払</p>
-                    </div>
-                  </div>
-                  <div class="c-plans-list__keiyaku-detail">
-                    <div class="c-plans-list__keiyaku-box c-plans-list__keiyaku-box--type1">
-                      <div class="c-plans-list__col">
-                        <p class="c-plans-list__heading c-plans-list__heading--gray">主契約</p>
-                        <ul class="c-plans-list__list-wrapper">
-                          <li class="c-plans-list__item">● 入院給付日額：5,000円</li>
-                          <li class="c-plans-list__item">● 給付限度の型：60日型</li>
-                          <li class="c-plans-list__item">● 手術給付金の型：10倍型</li>
-                          <li class="c-plans-list__item">● 放射線治療給付金：10倍型</li>
-                        </ul>
-                      </div>
-                      <div class="c-plans-list__item-plus"></div>
-                      <div class="c-plans-list__col c-plans-list__col--one-line">
-                        <p class="c-plans-list__heading c-plans-list__heading--blue">特約</p>
-                        <ul class="c-plans-list__list-wrapper">
-                          <li class="c-plans-list__item"><span class="c-plans-list__item-icon">●</span> 引受基準緩和型先進医療特約：付加</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="c-plans-list__keiyaku-box c-plans-list__keiyaku-box--type2">
-                      <p class="c-plans-list__keiyaku-heading">10日間入院＋手術した場合</p>
-                      <div class="c-plans-list__data">
-                        <div class="c-plans-list__data-item">
-                          <p class="c-plans-list__data-text">
-                            入院給付金<br />
-                            5,000円×10日
-                          </p>
-                          <p class="c-plans-list__data-price"><span class="c-plans-list__data-num">5</span>万円</p>
-                        </div>
-                        <div class="c-plans-list__data-plus-icon"></div>
-                        <div class="c-plans-list__data-item">
-                          <p class="c-plans-list__data-text">
-                            手術給付金<br />
-                            （入院中）
-                          </p>
-                          <p class="c-plans-list__data-price"><span class="c-plans-list__data-num">5</span>万円</p>
-                        </div>
-                      </div>
-                      <p class="c-plans-list__catch"
-                        >合計<span class="c-plans-list__catch c-plans-list__catch--large">10.0<span class="c-plans-list__catch c-plans-list__catch--blue">万円</span></span
-                        >の給付金が受け取れる！</p
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="c-plans-list">
-                  <div class="c-plans-list__headline">
-                    <div class="c-plans-list__headline-image c-plans-list__headline-image--3">
-                      <picture>
-                        <source srcset="images/webp/plan-full-man.webp" width="154" height="140" type="image/webp" />
-                        <img src="images/plan-full-man.png" alt="充実プラン女性" width="154" height="140" loading="lazy" />
-                      </picture>
-                    </div>
-                    <div class="c-plans-list__headline-heading">
-                      <p class="c-plans-list__headline-heading-sub">入院後の通院も手厚くしっかり備えたい！</p>
-                      <p class="c-plans-list__headline-heading-main">充実プラン</p>
-                    </div>
-                  </div>
-                  <div class="c-plans-list__customer">
-                    <div class="c-plans-list__customer-line">
-                      <p class="c-plans-list__customer-text">45歳<span class="c-plans-list__customer-gender">女性</span></p>
-                      <p class="c-plans-list__customer-price">月額保険料 5,252円</p>
-                    </div>
-                    <div class="c-plans-list__customer-line">
-                      <p class="c-plans-list__customer-term">保険料払込期間：終身、保険料払込経路：口座振替月払</p>
-                    </div>
-                  </div>
-                  <div class="c-plans-list__keiyaku-detail">
-                    <div class="c-plans-list__keiyaku-box c-plans-list__keiyaku-box--type1">
-                      <div class="c-plans-list__col">
-                        <p class="c-plans-list__heading c-plans-list__heading--gray">主契約</p>
-                        <ul class="c-plans-list__list-wrapper">
-                          <li class="c-plans-list__item">● 入院給付日額：5,000円</li>
-                          <li class="c-plans-list__item">● 給付限度の型：60日型</li>
-                          <li class="c-plans-list__item">● 手術給付金の型：手術10倍型</li>
-                          <li class="c-plans-list__item">● 放射線治療給付金：10倍型</li>
-                        </ul>
-                      </div>
-                      <div class="c-plans-list__item-plus"></div>
-                      <div class="c-plans-list__col">
-                        <p class="c-plans-list__heading c-plans-list__heading--blue">特約</p>
-                        <ul class="c-plans-list__list-wrapper">
-                          <li class="c-plans-list__item c-plans-list__item--blue"><span class="c-plans-list__item-icon">●</span> 引受基準緩和型先進医療特約：付加</li>
-                          <li class="c-plans-list__item c-plans-list__item--blue"><span class="c-plans-list__item-icon">●</span> 引受基準緩和型入院一時給付特約：付加(入院一時給付金：5万円)</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="c-plans-list__keiyaku-box c-plans-list__keiyaku-box--type2">
-                      <p class="c-plans-list__keiyaku-heading">5日間入院＋手術した場合</p>
-                      <div class="c-plans-list__data">
-                        <div class="c-plans-list__data-item c-plans-list__data-item--small">
-                          <p class="c-plans-list__data-text c-plans-list__data-text--small">
-                            入院給付金<br />
-                            5,000円×5日
-                          </p>
-                          <p class="c-plans-list__data-price c-plans-list__data-price--small"><span class="c-plans-list__data-num c-plans-list__data-num--small">2.5</span>万円</p>
-                        </div>
-                        <div class="c-plans-list__data-plus-icon c-plans-list__data-plus-icon--small"></div>
-                        <div class="c-plans-list__data-item c-plans-list__data-item--small">
-                          <p class="c-plans-list__data-text c-plans-list__data-text--small">
-                            入院一時<br />
-                            給付金
-                          </p>
-                          <p class="c-plans-list__data-price c-plans-list__data-price--small"><span class="c-plans-list__data-num c-plans-list__data-num--small">5</span>万円</p>
-                        </div>
-                        <div class="c-plans-list__data-plus-icon c-plans-list__data-plus-icon--small"></div>
-                        <div class="c-plans-list__data-item c-plans-list__data-item--small">
-                          <p class="c-plans-list__data-text c-plans-list__data-text--small">
-                            手術給付金<br />
-                            （入院中）
-                          </p>
-                          <p class="c-plans-list__data-price c-plans-list__data-price--small"><span class="c-plans-list__data-num c-plans-list__data-num--small">5</span>万円</p>
-                        </div>
-                      </div>
-                      <p class="c-plans-list__catch"
-                        >合計<span class="c-plans-list__catch c-plans-list__catch--large">12.5<span class="c-plans-list__catch c-plans-list__catch--blue">万円</span></span
-                        >の給付金が受け取れる！</p
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-parts-wrapper">
-              <div class="swiper-button-prev"></div>
-              <div class="js-swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="l-section-bottom-message">
-        <div class="l-section-bottom-message__heading js-scrollin">
-          <div class="l-section-bottom-message__heading-bg">
-            <picture>
-              <source srcset="images/webp/shiryou-message-bg.webp" width="638" height="306" type="image/webp" />
-              <img src="images/shiryou-message-bg.png" alt="持病があるからこそしっかり保険を備えよう！の背景" width="638" height="306" loading="lazy" />
-            </picture>
-          </div>
-          <p class="l-section-bottom-message__heading-text"><img class="l-section-bottom-message__heading-text-img" src="images/free-shiryou-pop.svg" alt="持病があるからこそしっかり保険を備えよう！" width="223" height="45" loading="lazy" /></p>
-        </div>
-        <div class="l-section-bottom-message__image js-scrollin">
-          <picture>
-            <source srcset="images/webp/shiryou-message-img.webp" width="408" height="372" type="image/webp" />
-            <img src="images/shiryou-message-img.png" alt="平愛梨さんの画像" width="408" height="372" loading="lazy" />
-          </picture>
-        </div>
-        <div class="js-scrollin">
+        <div class="l-section-hero__button">
           <a href="#sectionShiryou" class="c-freeshiryou-button js-scroll-link">
-            <p class="c-freeshiryou-pop">
-              <picture>
-                <source srcset="images/webp/free-shiryou-btn-pop.webp" width="169" height="51" type="image/webp" />
-                <img class="c-freeshiryou-pop-img" src="images/free-shiryou-btn-pop.png" alt="かんたん1分！" width="153" height="47" loading="lazy" />
-              </picture>
-            </p>
             <div class="c-freeshiryou-button__link">
               <div class="c-freeshiryou-button__icon"><img class="c-freeshiryou-button__icon-img" src="images/free-shiryou-icon.svg" alt="資料アイコン" width="24" height="18" loading="lazy" /></div>
               <p class="c-freeshiryou-button__text">無料の資料請求はこちら</p>
@@ -524,72 +134,295 @@
           </a>
         </div>
       </section>
-      <section class="l-section-qa">
-        <p class="c-section-heading c-section-heading--qa js-scrollin">
-          <picture>
-            <source srcset="images/webp/qa-head.webp" width="222" height="63" type="image/webp" />
-            <img class="c-section-heading-img" src="images/qa-head.png" alt="よくある質問" width="222" height="63" loading="lazy" />
-          </picture>
-        </p>
-        <div class="c-qa-accordion js-scrollin">
-          <details class="c-qa-box">
-            <summary class="c-qa-box__question">
-              <span class="c-qa-box__question-icon"
-                ><span class="c-qa-box__question-icon-elm"><img class="c-qa-box__question-icon-img" src="images/qa-q.svg" alt="Q" width="14" height="14" type="image/webp" /></span
-              ></span>
-              <span class="c-qa-box__question-text">資料請求は無料ですか？</span>
-              <span class="c-qa-box__question-close"></span>
-            </summary>
-            <div class="c-qa-box__answer">
-              <span class="c-qa-box__answer-icon"
-                ><span class="c-qa-box__answer-icon-elm"><img class="c-qa-box__answer-icon-img" src="images/qa-a.svg" alt="A" width="12" height="13" type="image/webp" /></span
-              ></span>
-              <p class="c-qa-box__answer-text">はい、無料です。お気軽にご請求ください。</p>
+      <div class="l-section-wrapper">
+        <section class="l-section-topmessage js-scrollin">
+          <div class="l-section-topmessage__logo">
+            <picture>
+              <source srcset="images/webp/passport-logo.webp" width="492" height="106" type="image/webp" />
+              <img src="images/passport-logo.png" alt="持病があっても入りやすい 元気パスポートワイド" width="246" height="53" loading="lazy" />
+            </picture>
+          </div>
+        </section>
+        <section class="l-section-points">
+          <p class="c-section-heading c-section-heading--point js-scrollin">
+            <picture>
+              <source srcset="images/webp/point-head.webp" width="247" height="51" type="image/webp" />
+              <img class="c-section-heading-img" src="images/point-head.png" alt="3つのポイント" width="247" height="51" loading="lazy" />
+            </picture>
+          </p>
+          <div class="l-section-points__inner">
+            <ul class="l-section-points__list-wrapper">
+              <li class="c-points-list js-scrollin">
+                <p class="c-points-list__heading">
+                  <img class="c-points-list__heading-img no-pc" src="images/point-title1-sp.svg" alt="ポイント1 持病があっても大丈夫" width="264" height="36" loading="lazy" />
+                  <img class="c-points-list__heading-img no-sp" src="images/point-title1-pc.svg" alt="01 持病があっても大丈夫" width="298" height="54" loading="lazy" />
+                </p>
+                <div class="c-points-list__info">
+                  <div class="c-points-list__info-icon">
+                    <picture>
+                      <source srcset="images/webp/point-icon1.webp" width="164" height="164" type="image/webp" />
+                      <img src="images/point-icon1.png" alt="ポイント1" width="164" height="164" loading="lazy" />
+                    </picture>
+                  </div>
+                  <p class="c-points-list__info-text">
+                    持病がある方も入りやすいように、<span class="c-points-list__info-text--yellow">告知はたった２つ</span>だけ！<br />
+                    告知に該当しなければ、お申し込みいただけます。
+                  </p>
+                </div>
+              </li>
+              <li class="c-points-list js-scrollin">
+                <p class="c-points-list__heading">
+                  <img class="c-points-list__heading-img no-pc" src="images/point-title2-sp.svg" alt="ポイント2 持病もしっかり保障" width="264" height="37" loading="lazy" />
+                  <img class="c-points-list__heading-im no-sp" src="images/point-title2-pc.svg" alt="02 持病もしっかり保障" width="298" height="54" loading="lazy" />
+                </p>
+                <div class="c-points-list__info">
+                  <div class="c-points-list__info-icon">
+                    <picture>
+                      <source srcset="images/webp/point-icon2.webp" width="164" height="164" type="image/webp" />
+                      <img src="images/point-icon1.png" alt="ポイント2" width="164" height="164" loading="lazy" />
+                    </picture>
+                  </div>
+                  <p class="c-points-list__info-text">
+                    <span class="c-points-list__info-text--yellow">持病の再発・悪化</span>も保障します！<br />
+                    さらに、ご契約1年目に給付金請求をすることがあっても保障は<span class="c-points-list__info-text--yellow">満額</span>お受け取りいただけます。
+                  </p>
+                </div>
+              </li>
+              <li class="c-points-list js-scrollin">
+                <p class="c-points-list__heading">
+                  <img class="c-points-list__heading-img no-pc" src="images/point-title3-sp.svg" alt="ポイント3 日帰り入院でも一時金" width="264" height="36" loading="lazy" />
+                  <img class="c-points-list__heading-img no-sp" src="images/point-title3-pc.svg" alt="03 日帰り入院でも一時金" width="298" height="54" loading="lazy" />
+                </p>
+                <div class="c-points-list__info">
+                  <div class="c-points-list__info-icon">
+                    <picture>
+                      <source srcset="images/webp/point-icon3.webp" width="164" height="164" type="image/webp" />
+                      <img src="images/point-icon3.png" alt="ポイント3" width="164" height="164" loading="lazy" />
+                    </picture>
+                  </div>
+                  <p class="c-points-list__info-text">
+                    一時金が<span class="c-points-list__info-text--yellow">最大10万円！</span><sup class="c-points-list__info-num">*1</sup><br />
+                    日帰り入院から受け取れるから短い入院の時でも安心！<br />
+                    <span class="c-points-list__info-text--attention">※一時金は1万円単位で選択が可能</span>
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p class="l-section-points__attention js-scrollin">＊1 健康状態によっては一時金20万円まで案内可能な場合があります。</p>
+          </div>
+        </section>
+        <section class="l-section-kokuchi">
+          <div class="l-section-kokuchi__heading-wrapper js-scrollin">
+            <p class="c-section-heading c-section-heading--kokuchi">
+              <picture>
+                <source media="(max-width: 768px)" srcset="images/webp/kokuchi-head-sp.webp" width="218" height="60" type="image/webp" />
+                <source srcset="images/webp/kokuchi-head-pc.webp" width="397" height="97" type="image/webp" />
+                <img class="c-section-heading-img no-pc" src="images/kokuchi-head-sp.png" alt="告知項目" width="218" height="60" loading="lazy" />
+                <img class="c-section-heading-img no-sp" src="images/kokuchi-head-pc.png" alt="告知項目" width="397" height="97" loading="lazy" />
+              </picture>
+            </p>
+            <p class="l-section-kokuchi__pop">
+              <img class="l-section-kokuchi__pop-img no-pc" src="images/kokuchi-head-pop-sp.svg" alt="まずはチェック" width="56" height="54" loading="lazy" />
+              <img class="l-section-kokuchi__pop-img no-sp" src="images/kokuchi-head-pop-pc.svg" alt="まずはチェック" width="128" height="128" loading="lazy" />
+            </p>
+          </div>
+          <p class="l-section-kokuchi__headline">
+            <img class="no-pc" src="images/kokuchi-head-text-sp.svg" alt="質問２つに回答して 申し込みできるかチェック！" width="536" height="111">
+            <img class="no-sp" src="images/kokuchi-head-text-pc.svg" alt="質問２つに回答して 申し込みできるかチェック！" width="660" height="56">
+          </p>
+          <div class="l-section-kokuchi__qa-wrapper">
+            <div class="l-section-kokuchi__qa js-scrollin">
+              <div class="c-kokuchi-question">
+                <p class="c-kokuchi-question__heading">告知1</p>
+                <p class="c-kokuchi-question__text">最近3か月以内に、医師・歯科医師から入院・手術・放射線治療のいずれかをすすめられたことはありますか。</p>
+                <div class="c-kokuchi-question__button-box">
+                  <div class="c-kokuchi-question__button" data-step="1">はい</div>
+                  <div class="c-kokuchi-question__button" data-step="1">いいえ</div>
+                </div>
+              </div>
+              <div id="kokuchiPattern1" class="c-kokuchi-pattern">
+                <div class="c-kokuchi-answer__arrow"><img src="images/kokuchi-answer-arrow.svg" alt="矢印" width="267" height="48"></div>
+                <div class="c-kokuchi-answer">
+                  <p class="c-kokuchi-answer__text">本商品のお申し込みはいただけませんが、<br class="no-pc" />詳しく告知いただくことで<br class="no-pc" />別商品のご案内ができる可能性があります。</p>
+                  <a href="#sectionShiryou" class="c-kokuchi-answer__button js-scroll-link">
+                    <div class="c-kokuchi-answer__button-link">相談してみる</div>
+                    <div class="c-kokuchi-answer__button-arrow"><img src="images/kokuchi-arrow.svg" alt="矢印" width="24" height="22"></div>
+                  </a>
+                </div>
+              </div>
+              <div id="kokuchiPattern2" class="c-kokuchi-pattern">
+                <div class="c-kokuchi-question">
+                  <p class="c-kokuchi-question__heading">告知2</p>
+                  <p class="c-kokuchi-question__text">過去1年以内に、病気やケガで入院・手術・放射線治療・先進医療をうけたことがありますか。</p>
+                  <div class="c-kokuchi-question__button-box">
+                    <div class="c-kokuchi-question__button" data-step="2">はい</div>
+                    <div class="c-kokuchi-question__button" data-step="2">いいえ</div>
+                  </div>
+                </div>
+              </div>
+              <div id="kokuchiPattern3" class="c-kokuchi-pattern">
+                <div class="c-kokuchi-answer">
+                  <div class="c-kokuchi-answer__arrow"><img src="images/kokuchi-answer-arrow.svg" alt="矢印" width="267" height="48"></div>
+                  <p class="c-kokuchi-answer__text">
+                    該当事項が特定の入院・手術・治療等の場合<br class="no-pc" />には「いいえ」になります。<br class="no-pc" />申込可能か、詳しくお聞かせください。
+                  </p>
+                  <a href="#sectionShiryou" class="c-kokuchi-answer__button js-scroll-link">
+                    <div class="c-kokuchi-answer__button-link">相談してみる</div>
+                    <div class="c-kokuchi-answer__button-arrow"><img src="images/kokuchi-arrow.svg" alt="矢印" width="24" height="22"></div>
+                  </a>
+                </div>
+              </div>
+              <div id="kokuchiPattern4" class="c-kokuchi-pattern">
+                <div class="c-kokuchi-answer">
+                  <div class="c-kokuchi-answer__arrow"><img src="images/kokuchi-answer-arrow.svg" alt="矢印" width="267" height="48"></div>
+                  <div class="c-kokuchi-answer__button-box">
+                    <div class="c-kokuchi-answert__button-box-inner">
+                      <p class="c-kokuchi-answer__text c-kokuchi-answer__text--freeshiryou">お申し込みいただけます！</p>
+                      <a href="#sectionShiryou" class="c-kokuchi-answer__button c-kokuchi-answer__button--free-shiryou js-scroll-link">
+                        <div class="c-kokuchi-answer__button-link c-kokuchi-answer__button-link--freeshiryou">無料<span class="c-kokuchi-answer__button-link-small">の</span>資料請求</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </details>
-          <details class="c-qa-box">
-            <summary class="c-qa-box__question">
-              <span class="c-qa-box__question-icon"
-                ><span class="c-qa-box__question-icon-elm"><img class="c-qa-box__question-icon-img" src="images/qa-q.svg" alt="Q" width="14" height="14" type="image/webp" /></span
-              ></span>
-              <span class="c-qa-box__question-text">資料請求したら保険に入らないといけませんか？</span>
-              <span class="c-qa-box__question-close"></span>
-            </summary>
-            <div class="c-qa-box__answer">
-              <span class="c-qa-box__answer-icon"
-                ><span class="c-qa-box__answer-icon-elm"><img class="c-qa-box__answer-icon-img" src="images/qa-a.svg" alt="A" width="12" height="13" type="image/webp" /></span
-              ></span>
-              <p class="c-qa-box__answer-text">いいえ、無理にご加入を勧めることはございません。資料をご覧いただき、お気に召した場合のみお申し込みください。</p>
+            <p class="l-section-kokuchi__attention">※ここで回答いただいても、告知いただいたことにはなりません。お申し込み時に改めて体況を告知にてご申告ください。</p>
+          </div>
+        </section>
+        <section class="l-section-plans">
+          <p class="c-section-heading c-section-heading--plans js-scrollin">
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/webp/plan-head-sp.webp" width="222" height="60" type="image/webp" />
+              <source srcset="images/webp/plan-head-pc.webp" width="475" height="97" type="image/webp" />
+              <img class="c-section-heading-img no-pc" src="images/plan-head-sp.png" alt="プラン例" width="222" height="60" loading="lazy" />
+              <img class="c-section-heading-img no-sp" src="images/plan-head-pc.png" alt="プラン例" width="475" height="97" loading="lazy" />
+            </picture>
+          </p>
+          <div class="l-section-plans__list-wrapper js-scrollin">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="l-section-plans__slide">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="images/webp/plan-popular-pc.webp" type="image/webp" width="1001" height="538">
+                      <source srcset="images/webp/plan-popular-sp.webp" type="image/webp" width="692" height="982">
+                      <img class="l-section-plans__slide-img no-sp" src="images/plan-popular-pc.png" alt="人気プラン" width="1001" height="538">
+                      <img class="l-section-plans__slide-img no-pc" src="images/plan-popular-sp.png" alt="人気プラン" width="692" height="982">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="l-section-plans__slide">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="images/webp/plan-full-pc.webp" type="image/webp" width="1001" height="538">
+                      <source srcset="images/webp/plan-full-sp.webp" type="image/webp" width="692" height="982">
+                      <img class="l-section-plans__slide-img no-sp" src="images/plan-full-pc.png" alt="人気プラン" width="1001" height="538">
+                      <img class="l-section-plans__slide-img no-pc" src="images/plan-full-sp.png" alt="人気プラン" width="692" height="982">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="l-section-plans__slide">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="images/webp/plan-simple-pc.webp" type="image/webp" width="1001" height="538">
+                      <source srcset="images/webp/plan-simple-sp.webp" type="image/webp" width="692" height="982">
+                      <img class="l-section-plans__slide-img no-sp" src="images/plan-simple-pc.png" alt="人気プラン" width="1001" height="538">
+                      <img class="l-section-plans__slide-img no-pc" src="images/plan-simple-sp.png" alt="人気プラン" width="692" height="982">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-parts-wrapper">
+                <div class="swiper-button-prev"><img src="images/slide-arrow-prev.svg" alt="前" width="35" height="40"></div>
+                <div class="js-swiper-pagination"></div>
+                <div class="swiper-button-next"><img src="images/slide-arrow-next.svg" alt="次" width="35" height="40"></div>
+              </div>
             </div>
-          </details>
-          <details class="c-qa-box">
-            <summary class="c-qa-box__question">
-              <span class="c-qa-box__question-icon"
-                ><span class="c-qa-box__question-icon-elm"><img class="c-qa-box__question-icon-img" src="images/qa-q.svg" alt="Q" width="14" height="14" type="image/webp" /></span
-              ></span>
-              <span class="c-qa-box__question-text">告知に該当があっても申し込みできますか？</span>
-              <span class="c-qa-box__question-close"></span>
-            </summary>
-            <div class="c-qa-box__answer">
-              <span class="c-qa-box__answer-icon"
-                ><span class="c-qa-box__answer-icon-elm"><img class="c-qa-box__answer-icon-img" src="images/qa-a.svg" alt="A" width="12" height="13" type="image/webp" /></span
-              ></span>
-              <p class="c-qa-box__answer-text">病名や手術の内容によってはお申し込みできる可能性がございます。ご自身で判断せず、ぜひ一度ご相談ください。</p>
+          </div>
+        </section>
+        <section class="l-section-bottom-message">
+          <div class="l-section-bottom-message__heading js-scrollin">
+            <div class="l-section-bottom-message__heading-bg">
+              <picture>
+                <source srcset="images/webp/shiryou-message-bg.webp" width="638" height="306" type="image/webp" />
+                <img src="images/shiryou-message-bg.png" alt="持病があるからこそしっかり保険を備えよう！の背景" width="638" height="306" loading="lazy" />
+              </picture>
             </div>
-          </details>
-        </div>
-      </section>
-      <section id="sectionShiryou" class="l-section-shiryou js-anchor-link">
-        <p class="c-section-heading c-section-heading--shiryou js-scrollin">
-          <picture>
-            <source srcset="images/webp/shiryou-head.webp" width="222" height="63" type="image/webp" />
-            <img class="c-section-heading-img" src="images/shiryou-head.png" alt="資料請求" width="222" height="63" loading="lazy" />
-          </picture>
-        </p>
-        <div class="l-section-shiryou__form js-scrollin">
-          <div class="formrun-embed" data-formrun-form="@project-planning-metOPqLSrdpNjtyCY3Lw" data-formrun-redirect="true"> </div>
-        </div>
-      </section>
+            <p class="l-section-bottom-message__heading-text"><img class="l-section-bottom-message__heading-text-img" src="images/free-shiryou-pop.svg" alt="持病があるからこそしっかり保険を備えよう！" width="223" height="45" loading="lazy" /></p>
+          </div>
+          <div class="l-section-bottom-message__image js-scrollin">
+            <picture>
+              <source srcset="images/webp/shiryou-message-img.webp" width="408" height="372" type="image/webp" />
+              <img src="images/shiryou-message-img.png" alt="平愛梨さんの画像" width="408" height="372" loading="lazy" />
+            </picture>
+          </div>
+        </section>
+        <section class="l-section-qa">
+          <p class="c-section-heading c-section-heading--qa js-scrollin">
+            <picture>
+              <source srcset="images/webp/qa-head.webp" width="222" height="63" type="image/webp" />
+              <img class="c-section-heading-img" src="images/qa-head.png" alt="よくある質問" width="222" height="63" loading="lazy" />
+            </picture>
+          </p>
+          <div class="c-qa-accordion js-scrollin">
+            <details class="c-qa-box">
+              <summary class="c-qa-box__question">
+                <span class="c-qa-box__question-icon"><span class="c-qa-box__question-icon-elm"><img class="c-qa-box__question-icon-img" src="images/qa-q.svg" alt="Q" width="14" height="14" type="image/webp" /></span></span>
+                <span class="c-qa-box__question-text">資料請求は無料ですか？</span>
+                <span class="c-qa-box__question-close"><img src="images/question-close.svg" alt="閉じるアイコン" width="30" height="30"></span>
+              </summary>
+              <div class="c-qa-box__answer">
+                <span class="c-qa-box__answer-icon"><span class="c-qa-box__answer-icon-elm"><img class="c-qa-box__answer-icon-img" src="images/qa-a.svg" alt="A" width="12" height="13" type="image/webp" /></span></span>
+                <p class="c-qa-box__answer-text">はい、無料です。お気軽にご請求ください。</p>
+              </div>
+            </details>
+            <details class="c-qa-box">
+              <summary class="c-qa-box__question">
+                <span class="c-qa-box__question-icon"
+                  ><span class="c-qa-box__question-icon-elm"><img class="c-qa-box__question-icon-img" src="images/qa-q.svg" alt="Q" width="14" height="14" type="image/webp" /></span
+                ></span>
+                <span class="c-qa-box__question-text">資料請求したら保険に入らないといけませんか？</span>
+                <span class="c-qa-box__question-close"><img src="images/question-close.svg" alt="閉じるアイコン" width="30" height="30"></span>
+              </summary>
+              <div class="c-qa-box__answer">
+                <span class="c-qa-box__answer-icon"
+                  ><span class="c-qa-box__answer-icon-elm"><img class="c-qa-box__answer-icon-img" src="images/qa-a.svg" alt="A" width="12" height="13" type="image/webp" /></span
+                ></span>
+                <p class="c-qa-box__answer-text">いいえ、無理にご加入を勧めることはございません。資料をご覧いただき、お気に召した場合のみお申し込みください。</p>
+              </div>
+            </details>
+            <details class="c-qa-box">
+              <summary class="c-qa-box__question">
+                <span class="c-qa-box__question-icon"
+                  ><span class="c-qa-box__question-icon-elm"><img class="c-qa-box__question-icon-img" src="images/qa-q.svg" alt="Q" width="14" height="14" type="image/webp" /></span
+                ></span>
+                <span class="c-qa-box__question-text">告知に該当があっても申し込みできますか？</span>
+                <span class="c-qa-box__question-close"><img src="images/question-close.svg" alt="閉じるアイコン" width="30" height="30"></span>
+              </summary>
+              <div class="c-qa-box__answer">
+                <span class="c-qa-box__answer-icon"
+                  ><span class="c-qa-box__answer-icon-elm"><img class="c-qa-box__answer-icon-img" src="images/qa-a.svg" alt="A" width="12" height="13" type="image/webp" /></span
+                ></span>
+                <p class="c-qa-box__answer-text c-qa-box__answer-text--strong">
+                  病名や手術の内容によってはお申し込みできる可能性がございます。ご自身で判断せず、ぜひ一度ご相談ください。<br>
+                  <a href="#sectionShiryou" class="c-qa-box__answer-link js-scroll-link">ご相談はこちら</a>
+                </p>
+              </div>
+            </details>
+          </div>
+        </section>
+        <section id="sectionShiryou" class="l-section-shiryou js-anchor-link">
+          <p class="c-section-heading c-section-heading--shiryou js-scrollin">
+            <picture>
+              <source srcset="images/webp/shiryou-head.webp" width="222" height="63" type="image/webp" />
+              <img class="c-section-heading-img" src="images/shiryou-head.png" alt="資料請求" width="222" height="63" loading="lazy" />
+            </picture>
+          </p>
+          <div class="l-section-shiryou__form js-scrollin">
+            <div class="formrun-embed" data-formrun-form="@project-planning-metOPqLSrdpNjtyCY3Lw" data-formrun-redirect="true"> </div>
+          </div>
+        </section>
+      </div>
       <footer class="footer">
         <div class="footer__inner">
           <a href="tel:0120-907-037" class="footer__tel-button">
@@ -611,7 +444,7 @@
               </li>
             </ul>
             <a href="https://www.financial-agency.com/service/wp-content/uploads/2024/12/hanbaihousin.pdf" target="_blank" class="footer__textlink">販売方針・推奨理由</a>
-            <p class="footer__num">募868-241206</p>
+            <p class="footer__num">他1200-250313</p>
           </div>
         </div>
         <p class="footer__copyright">COPYRIGHT &copy; Financial Agency. All rights reserved.</p>
