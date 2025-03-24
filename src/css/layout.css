@@ -38,7 +38,7 @@
   inline-size: 137px;
   padding-block: 7px;
   border-radius: var(--rounded-18);
-  background-color: var(--contact-btn);
+  background-color: var(--contact-button);
   color: var(--color-grayscale-0);
   font-size: calc(12 * var(--rem-ratio));
   font-family: var(--font-sans);
@@ -56,7 +56,7 @@
   inline-size: calc(222 / var(--layout-width-sp) * 100%);
   aspect-ratio: 1/1;
   margin-block-end: calc(27 / var(--layout-width-sp) * 100%);
-  background-color: var(--shiryou-btn);
+  background-color: var(--shiryou-button);
   border-radius: 50%;
   opacity: 0;
   visibility: hidden;
@@ -112,7 +112,7 @@
 }
 
 .l-section-hero__inner::before {
-  content: "";
+  content: '';
   position: absolute;
   inset-block-start: 0;
   inset-inline-start: 0;
@@ -269,7 +269,7 @@
 }
 
 .l-section-hero__disease-heading::after {
-  content: "";
+  content: '';
   display: block;
   inline-size: 100%;
   block-size: 2px;
@@ -614,7 +614,7 @@
   font-family: var(--font-sans-display);
   font-weight: var(--font-normal);
   font-size: calc(11 * var(--rem-ratio));
-  color: var(--shiryou-btn);
+  color: var(--shiryou-button);
   line-height: var(--leading-tight);
   text-align: center;
 }
@@ -637,7 +637,7 @@
     display: block;
     inline-size: 100%;
     padding-block: 5.5px;
-    background-color: var(--shiryou-btn);
+    background-color: var(--shiryou-button);
     border-radius: var(--rounded-frame-s);
     font-size: calc(11 * var(--rem-ratio));
     text-align: center;
@@ -679,7 +679,7 @@
     order: 3;
     margin-inline: calc((16 / 336) * 100%) calc((12 / 336) * 100%);
   }
-  
+
   .l-sticky-float__heading {
     font-size: min(calc(23 / var(--layout-width-max) * 100vw), calc(17 * var(--rem-ratio)));
   }

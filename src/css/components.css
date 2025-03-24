@@ -44,10 +44,10 @@
   inline-size: 100%;
   margin: auto;
   padding: 13px calc((53 / 655) * 100%);
-  background-color: var(--shiryou-btn);
+  background-color: var(--shiryou-button);
   border: 2.5px solid var(--background-base);
   border-radius: var(--rounded-l);
-  box-shadow: var(--shadow-freeshiryou-btn);
+  box-shadow: var(--shadow-freeshiryou-button);
 }
 
 .c-freeshiryou-button__icon {
@@ -161,7 +161,7 @@
   padding-block: calc(40px / 2) calc(30px / 2);
   box-shadow: var(--shadow-kokuchi-freeshiryou-btn-cover);
   border-radius: var(--rounded-12);
-  border: 4px solid var(--shiryou-btn);
+  border: 4px solid var(--shiryou-button);
 }
 
 .c-kokuchi-answer__text {
@@ -177,7 +177,7 @@
 .c-kokuchi-answer__text--freeshiryou {
   margin: 0;
   font-size: calc(21 * var(--rem-ratio));
-  color: var(--shiryou-btn);
+  color: var(--shiryou-button);
 }
 
 .c-kokuchi-answer__button {
@@ -200,8 +200,8 @@
   justify-content: center;
   align-items: center;
   padding-block: 12px;
-  background-color: var(--contact-btn);
-  box-shadow: var(--shadow-kokuchi-soudan-btn);
+  background-color: var(--contact-button);
+  box-shadow: var(--shadow-kokuchi-soudan-button);
   border-radius: var(--rounded-l);
   font-family: var(--font-sans);
   font-weight: var(--font-bold);
@@ -213,8 +213,8 @@
 
 .c-kokuchi-answer__button-link--freeshiryou {
   padding-block: 10px;
-  box-shadow: var(--shadow-freeshiryou-btn-pink);
-  background-color: var(--shiryou-btn);
+  box-shadow: var(--shadow-freeshiryou-button-pink);
+  background-color: var(--shiryou-button);
   color: var(--background-base);
 }
 
@@ -743,7 +743,7 @@
   font-family: var(--font-sans);
   font-weight: var(--font-bold);
   font-size: calc(13 * var(--rem-ratio));
-  color: var(--shiryou-btn);
+  color: var(--shiryou-button);
   text-decoration: underline;
 }
 

@@ -1,12 +1,6 @@
 const windowValues = {
   get winTop() {
-    return window.pageYOffset || document.documentElement.scrollTop;
-  },
-  get winW() {
-    return window.innerWidth;
-  },
-  get winH() {
-    return window.innerHeight;
+    return window.pageYOffset;
   },
 };
 
@@ -107,9 +101,9 @@ const toggleFloat = () => {
   const float = document.querySelector('.l-sticky-float');
   const startContent = document.querySelector('.l-section-topmessage');
   const startTop = startContent.getBoundingClientRect().top + windowValues.winTop;
-  const headerH = document.querySelector('.header').offsetHeight;
+  const headerHeight = document.querySelector('.header').offsetHeight;
 
-  if (startTop <= windowValues.winTop + headerH) {
+  if (startTop <= windowValues.winTop + headerHeight) {
     float.classList.add('l-sticky-float--show');
   } else {
     float.classList.remove('l-sticky-float--show');

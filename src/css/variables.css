@@ -67,19 +67,19 @@
   --background-base: var(--color-grayscale-0);
   --font-base: var(--color-grayscale-900);
   --underline-base: color-mix(in srgb, currentcolor, transparent 40%);
-  --contact-btn: var(--color-grayscale-200);
-  --shiryou-btn: var(--color-grayscale-700);
+  --contact-button: var(--color-grayscale-200);
+  --shiryou-button: var(--color-grayscale-700);
   --common-blue: var(--color-grayscale-500);
   --common-yellow: var(--color-grayscale-200);
   --background-yellow: var(--color-grayscale-100);
   --plans-gray: var(--color-grayscale-800);
   --parts: var(--color-grayscale-300);
   --shine: var(--color-grayscale-400);
-  --shadow-freeshiryou-btn: 0 6px 6px 0 rgb(7 66 110 / 100%);
-  --shadow-kokuchi-freeshiryou-btn-base: 0 3px 3.5px 0 rgb(0 0 0 / 25%);
-  --shadow-kokuchi-freeshiryou-btn-cover: 0 6px 6px 0 rgb(195 184 186 / 100%);
-  --shadow-freeshiryou-btn-pink: 0 2px 2px 0 rgb(0 0 0 / 25%);
-  --shadow-kokuchi-soudan-btn: 0 3px 2px 0 rgb(0 0 0 / 25%);
+  --shadow-freeshiryou-button: 0 6px 6px 0 rgb(7 66 110 / 100%);
+  --shadow-kokuchi-freeshiryou-button-base: 0 3px 3.5px 0 rgb(0 0 0 / 25%);
+  --shadow-kokuchi-freeshiryou-button-cover: 0 6px 6px 0 rgb(195 184 186 / 100%);
+  --shadow-freeshiryou-button-pink: 0 2px 2px 0 rgb(0 0 0 / 25%);
+  --shadow-kokuchi-soudan-button: 0 3px 2px 0 rgb(0 0 0 / 25%);
 
   /* z-index */
   --back-z-index: -1;
