@@ -1673,6 +1673,10 @@ summary::-webkit-details-marker {
   font-size: calc(12 * var(--rem-ratio));
 }
 
+.c-points-list__info-text--thick {
+  font-weight: var(--font-bold);
+}
+
 .c-points-list__info-num {
   vertical-align: text-top;
 }
